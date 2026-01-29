@@ -44,7 +44,7 @@ const ContactForm = () => {
 
               {/* ILLUSTRATION */}
               <div className="flex justify-center">
-                <div className="w-full max-w-xs sm:max-w-sm lg:w-80 h-48 sm:h-56 lg:h-64 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl lg:rounded-2xl flex items-center justify-center">
+                <div className="w-full max-w-xs sm:max-w-sm lg:w-80 h-48 sm:h-56 lg:h-64 rounded-xl lg:rounded-2xl flex items-center justify-center">
                   <img
                     src={enquiryImg}
                     alt="Enquiry Support Illustration"
