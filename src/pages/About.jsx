@@ -24,6 +24,16 @@ import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.p
 import shiviKaliaImg from "../assets/images/advisory board/Ms. Shivi Kalia.png";
 import sushmaBhayaniImg from "../assets/images/advisory board/Ms. Sushma Bhayani.png";
 
+// Import organizational network resources images
+import vivekVelankarImg from "../assets/images/advisory board/Vivek Velankar.png";
+import udayakumarImg from "../assets/images/advisory board/Udayakumar.png";
+import sachinItkarImg from "../assets/images/advisory board/Sachin Itkar.png";
+import rusenKumarImg from "../assets/images/advisory board/Rusen Kumar.png";
+import milindKambleImg from "../assets/images/advisory board/Milind Kamble.png";
+import manojJoshiImg from "../assets/images/advisory board/Manoj Joshi.png";
+import deepakShikarpurImg from "../assets/images/advisory board/Deepak Shikarpur.png";
+import bhikuRamjiIdateImg from "../assets/images/advisory board/Bhiku Ramji Idate.png";
+
 // Import academic advisory board images
 import mukulSutaoneImg from "../assets/images/Academic Advisory Board/Mukul Sutaone.png";
 import karbhariKaleImg from "../assets/images/Academic Advisory Board/Karbhari Vishwanath Kale.png";
@@ -1080,6 +1090,196 @@ const About = () => {
               </div>
             </div>
 
+            {/* Organizational Network Resources Section */}
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold text-[#3D1717] mb-4">
+                  Organizational Network Resources
+                </h3>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Distinguished leaders and industry experts who contribute to our organizational network and strategic initiatives.
+                </p>
+              </div>
+
+              {/* Network Resources Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                {/* Padmashri Manoj Joshi */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={manojJoshiImg}
+                          alt="Padmashri Manoj Joshi"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Padmashri Manoj Joshi
+                      </h3>
+                      <p className="text-sm text-orange-600 font-medium">Actor</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Padmashri Dr. Milind Kamble */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={milindKambleImg}
+                          alt="Padmashri Dr. Milind Kamble"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Padmashri Dr. Milind Kamble
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">President DICCI</p>
+                      <p className="text-sm text-orange-600 font-medium">Chairman, Board of Governors, IIM Jammu</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dr. Deepak Shikarpur */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={deepakShikarpurImg}
+                          alt="Dr. Deepak Shikarpur"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Dr. Deepak Shikarpur
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Director Kinetic Engineering</p>
+                      <p className="text-sm text-orange-600 font-medium">Member AICTE Board</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Padmashri Shri Bhiku Ramji Idate */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={bhikuRamjiIdateImg}
+                          alt="Padmashri Shri Bhiku Ramji Idate"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Padmashri Shri Bhiku Ramji Idate
+                      </h3>
+                      <p className="text-sm text-orange-600 font-medium">Dada Idate</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Sachin Itkar */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={sachinItkarImg}
+                          alt="Mr. Sachin Itkar"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Mr. Sachin Itkar
+                      </h3>
+                      <p className="text-sm text-orange-600 font-medium">Advisor, Strategic Foresight Group</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Vivek Velankar */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={vivekVelankarImg}
+                          alt="Mr. Vivek Velankar"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Mr. Vivek Velankar
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">President Sajag Nagrik Manch</p>
+                      <p className="text-sm text-orange-600 font-medium">RTI Activist</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. P. Udayakumar */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={udayakumarImg}
+                          alt="Mr. P. Udayakumar"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Mr. P. Udayakumar
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Former Chairman &</p>
+                      <p className="text-sm text-orange-600 font-medium">Managing Director NSIC</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Rusen Kumar */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
+                        <img
+                          src={rusenKumarImg}
+                          alt="Mr. Rusen Kumar"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                        Mr. Rusen Kumar
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-1">Founder and Managing</p>
+                      <p className="text-sm text-orange-600 font-medium">Editor India CSR Network</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
             {/* Bottom Section */}
             <div className="mt-16 text-center">
               <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
@@ -1087,7 +1287,7 @@ const About = () => {
                   Dual Advisory Excellence
                 </h3>
                 <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                  Our comprehensive advisory structure combines industry expertise with academic excellence. 
+                  Our comprehensive advisory structure combines industry expertise with academic excellence and organizational network resources. 
                   The Industry Advisory Board ensures market relevance and practical application, while the 
                   Academic Advisory Board maintains educational rigor and research-based learning approaches, 
                   creating a perfect balance for holistic skill development.
