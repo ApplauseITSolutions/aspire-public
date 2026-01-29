@@ -51,7 +51,7 @@ const allStats = [
   {
     icon: mouTieUpsIcon,
     value: "200+",
-    label: "Industry Partnerships"
+    label: "MOUs with Industry Partnerships"
   }
 ];
 

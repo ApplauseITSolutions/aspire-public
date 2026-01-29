@@ -390,7 +390,7 @@ const About = () => {
                       <Award className="w-5 h-5 text-[#EF7F2C] group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">200+ Industry Partnerships</div>
+                      <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">200+ MOUs</div>
                       <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">With Universities & Industries</div>
                     </div>
                   </div>
@@ -778,7 +778,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-gray-600 text-sm font-medium mb-1">Collaborations</p>
-                    <h3 className="text-gray-900 font-bold text-lg">200+ Industry Partnerships</h3>
+                    <h3 className="text-gray-900 font-bold text-lg">200+ MOUs</h3>
                   </div>
                 </div>
               </div>
