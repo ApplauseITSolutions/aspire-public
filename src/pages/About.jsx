@@ -805,7 +805,7 @@ const About = () => {
 
       {/* ADVISORS SECTION - DIFFERENT UI */}
       {activeTab === "advisors" && (
-        <section className="bg-white py-16 w-full">
+        <section className="bg-white py-2 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             
             {/* Section Header */}
@@ -827,7 +827,7 @@ const About = () => {
               
               {/* Col. Inder S Gahlaut */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -837,19 +837,21 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Col. Inder S Gahlaut
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">Skill Development PwC</p>
-                    <p className="text-sm text-orange-600 font-medium">CEO CGSE Specialist</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">Skill Development PwC</p>
+                      <p className="text-sm text-orange-600 font-medium">CEO CGSE Specialist</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Ms. Shivi Kalia */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -859,19 +861,21 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Ms. Shivi Kalia
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">Former Head BHR, Tech</p>
-                    <p className="text-sm text-orange-600 font-medium">Mahindra</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">Former Head BHR, Tech</p>
+                      <p className="text-sm text-orange-600 font-medium">Mahindra</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Mr. Pravin Mohite */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -881,19 +885,21 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Mr. Pravin Mohite
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">CEO Olive Data Centre Pvt.</p>
-                    <p className="text-sm text-orange-600 font-medium">Based in California</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">CEO Olive Data Centre Pvt.</p>
+                      <p className="text-sm text-orange-600 font-medium">Based in California</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Mr. Mohan Raju */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -903,19 +909,21 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Mr. Mohan Raju
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">VP & Vertical Head IoT</p>
-                    <p className="text-sm text-orange-600 font-medium">Reliance Jio</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">VP & Vertical Head IoT</p>
+                      <p className="text-sm text-orange-600 font-medium">Reliance Jio</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Lt. Gen. Dr SP Kochhar */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -925,19 +933,21 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Lt. Gen. Dr SP Kochhar
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">Director General COAI</p>
-                    <p className="text-sm text-orange-600 font-medium">Cellular Operators Association</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">Director General COAI</p>
+                      <p className="text-sm text-orange-600 font-medium">Cellular Operators Association</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Ms. Sushma Bhayani */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -947,19 +957,21 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Ms. Sushma Bhayani
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">Former Senior Solution</p>
-                    <p className="text-sm text-orange-600 font-medium">Manager, IBM</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">Former Senior Solution</p>
+                      <p className="text-sm text-orange-600 font-medium">Manager, IBM</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Mr. Pradeep Jaswani */}
               <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                       <img
@@ -969,12 +981,14 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                  <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                       Mr. Pradeep Jaswani
                     </h3>
-                    <p className="text-sm text-gray-600 mb-1">CEO JP Research India</p>
-                    <p className="text-sm text-orange-600 font-medium">Pvt. Ltd. (USA Based)</p>
+                    <div className="min-h-[40px] flex flex-col items-center justify-center">
+                      <p className="text-sm text-gray-600 mb-1">CEO JP Research India</p>
+                      <p className="text-sm text-orange-600 font-medium">Pvt. Ltd. (USA Based)</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1001,7 +1015,7 @@ const About = () => {
                 
                 {/* Dr. Mukul Sutaone */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1011,19 +1025,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Dr. Mukul Sutaone
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Director</p>
-                      <p className="text-sm text-orange-600 font-medium">Indian Institute of Information Technology, Allahabad</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Director</p>
+                        <p className="text-sm text-orange-600 font-medium">Indian Institute of Information Technology, Allahabad</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Colonel Professor Karbhari Vishwanath Kale */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1033,19 +1049,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Col. Prof. Karbhari Vishwanath Kale
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Vice-Chancellor</p>
-                      <p className="text-sm text-orange-600 font-medium">Dr. Babasaheb Ambedkar Technological University (DBATU)</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Vice-Chancellor</p>
+                        <p className="text-sm text-orange-600 font-medium">Dr. Babasaheb Ambedkar Technological University (DBATU)</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Prof. Sunil Bhirud */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1055,19 +1073,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Prof. Sunil Bhirud
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Vice Chancellor - COEP</p>
-                      <p className="text-sm text-orange-600 font-medium">Technological University (COEP Tech)</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Vice Chancellor - COEP</p>
+                        <p className="text-sm text-orange-600 font-medium">Technological University (COEP Tech)</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Dr. Shailendra K. Shukla */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1077,12 +1097,14 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Dr. Shailendra K. Shukla
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Professor</p>
-                      <p className="text-sm text-orange-600 font-medium">Indian Institute of Technology BHU, Varanasi</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Professor</p>
+                        <p className="text-sm text-orange-600 font-medium">Indian Institute of Technology BHU, Varanasi</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1106,7 +1128,7 @@ const About = () => {
                 
                 {/* Padmashri Manoj Joshi */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1116,18 +1138,20 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Padmashri Manoj Joshi
                       </h3>
-                      <p className="text-sm text-orange-600 font-medium">Actor</p>
+                      <div className="min-h-[40px] flex items-center justify-center">
+                        <p className="text-sm text-orange-600 font-medium">Actor</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Padmashri Dr. Milind Kamble */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1137,19 +1161,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Padmashri Dr. Milind Kamble
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">President DICCI</p>
-                      <p className="text-sm text-orange-600 font-medium">Chairman, Board of Governors, IIM Jammu</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">President DICCI</p>
+                        <p className="text-sm text-orange-600 font-medium">Chairman, Board of Governors, IIM Jammu</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Dr. Deepak Shikarpur */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1159,19 +1185,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Dr. Deepak Shikarpur
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Director Kinetic Engineering</p>
-                      <p className="text-sm text-orange-600 font-medium">Member AICTE Board</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Director Kinetic Engineering</p>
+                        <p className="text-sm text-orange-600 font-medium">Member AICTE Board</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Padmashri Shri Bhiku Ramji Idate */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1181,18 +1209,20 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Padmashri Shri Bhiku Ramji Idate
                       </h3>
-                      <p className="text-sm text-orange-600 font-medium">Dada Idate</p>
+                      <div className="min-h-[40px] flex items-center justify-center">
+                        <p className="text-sm text-orange-600 font-medium">Dada Idate</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Mr. Sachin Itkar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1202,18 +1232,20 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Mr. Sachin Itkar
                       </h3>
-                      <p className="text-sm text-orange-600 font-medium">Advisor, Strategic Foresight Group</p>
+                      <div className="min-h-[40px] flex items-center justify-center">
+                        <p className="text-sm text-orange-600 font-medium">Advisor, Strategic Foresight Group</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Mr. Vivek Velankar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1223,19 +1255,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Mr. Vivek Velankar
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">President Sajag Nagrik Manch</p>
-                      <p className="text-sm text-orange-600 font-medium">RTI Activist</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">President Sajag Nagrik Manch</p>
+                        <p className="text-sm text-orange-600 font-medium">RTI Activist</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Mr. P. Udayakumar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1245,19 +1279,21 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Mr. P. Udayakumar
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Former Chairman &</p>
-                      <p className="text-sm text-orange-600 font-medium">Managing Director NSIC</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Former Chairman &</p>
+                        <p className="text-sm text-orange-600 font-medium">Managing Director NSIC</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Mr. Rusen Kumar */}
                 <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[420px] flex flex-col">
                     <div className="relative overflow-hidden">
                       <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-8 flex items-center justify-center">
                         <img
@@ -1267,12 +1303,14 @@ const About = () => {
                         />
                       </div>
                     </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-lg font-bold text-[#3D1717] mb-2">
+                    <div className="p-6 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-lg font-bold text-[#3D1717] mb-2 min-h-[56px] flex items-center justify-center">
                         Mr. Rusen Kumar
                       </h3>
-                      <p className="text-sm text-gray-600 mb-1">Founder and Managing</p>
-                      <p className="text-sm text-orange-600 font-medium">Editor India CSR Network</p>
+                      <div className="min-h-[40px] flex flex-col items-center justify-center">
+                        <p className="text-sm text-gray-600 mb-1">Founder and Managing</p>
+                        <p className="text-sm text-orange-600 font-medium">Editor India CSR Network</p>
+                      </div>
                     </div>
                   </div>
                 </div>
