@@ -112,11 +112,11 @@ const Hero = () => {
   return (
     <section className="bg-[#fffaf4] pt-8 sm:pt-8 md:pt-10 lg:pt-20 pb-20 sm:pb-20 min-w-full overflow-x-hidden">
 
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-2 xl:px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 items-center min-w-0">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-2 xl:px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 items-start min-w-0">
 
         {/* LEFT CONTENT */}
-        <div className="text-center lg:text-left">
-          <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl text-[#3D1717] leading-tight mb-4 sm:mb-5">
+        <div className="text-center lg:text-left flex flex-col justify-start">
+          <h1 className="text-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl text-[#3D1717] leading-tight mb-4 sm:mb-5 mt-0">
             Aspire Knowledge &amp; Skills India Pvt. Ltd
           </h1>
           <p className="text-body text-justify text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
