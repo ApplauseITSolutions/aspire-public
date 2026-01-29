@@ -1115,11 +1115,15 @@ const About = () => {
             {/* Organizational Network Resources Section */}
             <div className="mt-20">
               <div className="text-center mb-12">
-                <h3 className="text-3xl font-bold text-[#3D1717] mb-4">
+                <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                  Strategic Network
+                </span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-6">
                   Organizational Network Resources
-                </h3>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Distinguished leaders and industry experts who contribute to our organizational network and strategic initiatives.
+                </h2>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                  Distinguished leaders and industry experts who contribute to our organizational network and strategic initiatives, 
+                  bringing diverse perspectives and valuable connections to enhance our mission.
                 </p>
               </div>
 
