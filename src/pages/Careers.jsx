@@ -62,7 +62,13 @@ const Careers = () => {
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => {
+                  if (tab.id === "edp-cell") {
+                    window.open("https://www.kaushalgurukulam.com/courses/aspire-entrepreneurship/", "_blank");
+                  } else {
+                    setActiveTab(tab.id);
+                  }
+                }}
                 className={`px-6 sm:px-8 py-4 font-medium text-sm transition-colors border-b-2 ${
                   activeTab === tab.id
                     ? "text-[#EF7F2C] border-[#EF7F2C]"
