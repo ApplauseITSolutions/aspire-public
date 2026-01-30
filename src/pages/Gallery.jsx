@@ -88,7 +88,7 @@ const Gallery = () => {
       </section>
 
       {/* GALLERY CONTENT SECTION */}
-      <section className="bg-white py-16 w-full">
+      <section className="bg-white py-8 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           
           {/* Gallery Tabs with Scroll Buttons */}
