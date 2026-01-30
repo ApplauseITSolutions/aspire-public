@@ -71,7 +71,11 @@ const Footer = () => {
                 Gallery
               </Link>
             </li>
-            <li className="hover:text-orange-500 cursor-pointer">Careers</li>
+            <li>
+              <Link to="/careers" className="hover:text-orange-500 cursor-pointer transition-colors">
+                Careers
+              </Link>
+            </li>
           </ul>
         </div>
 

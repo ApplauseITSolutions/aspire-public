@@ -9,6 +9,7 @@ import GuaranteedInternshipDetails from "./pages/GuaranteedInternshipDetails";
 import CampusToCorporateDetails from "./pages/CampusToCorporateDetails";
 import UIUXDeveloperDetails from "./pages/UIUXDeveloperDetails";
 import CloudTechnologyDetails from "./pages/CloudTechnologyDetails";
+import Careers from "./pages/Careers";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/impact-reach" element={<ImpactReachPage />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/programs/guaranteed-internship" element={<GuaranteedInternshipDetails />} />
         <Route path="/programs/campus-to-corporate" element={<CampusToCorporateDetails />} />
         <Route path="/programs/uiux-developer" element={<UIUXDeveloperDetails />} />
