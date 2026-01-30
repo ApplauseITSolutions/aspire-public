@@ -193,27 +193,51 @@ const Careers = () => {
                       </h3>
                       <div className="space-y-3">
                         <div className="flex items-center">
-                          <span className="text-pink-500 mr-3">🔬</span>
+                          <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
                           <span className="text-gray-700 text-sm">Data Science & Machine Learning</span>
                         </div>
                         <div className="flex items-center">
-                          <span className="text-blue-500 mr-3">💻</span>
+                          <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                            </svg>
+                          </div>
                           <span className="text-gray-700 text-sm">Software Development (Python, Java, SQL, C++)</span>
                         </div>
                         <div className="flex items-center">
-                          <span className="text-green-500 mr-3">📊</span>
+                          <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                            </svg>
+                          </div>
                           <span className="text-gray-700 text-sm">Business Analytics (Power BI, Tableau, Excel)</span>
                         </div>
                         <div className="flex items-center">
-                          <span className="text-purple-500 mr-3">📈</span>
+                          <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clipRule="evenodd" />
+                            </svg>
+                          </div>
                           <span className="text-gray-700 text-sm">Marketing & Digital Analytics</span>
                         </div>
                         <div className="flex items-center">
-                          <span className="text-orange-500 mr-3">💰</span>
+                          <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+                            </svg>
+                          </div>
                           <span className="text-gray-700 text-sm">Finance & Accounting (Tally, Financial Modeling)</span>
                         </div>
                         <div className="flex items-center">
-                          <span className="text-cyan-500 mr-3">☁️</span>
+                          <div className="w-6 h-6 mr-3 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
                           <span className="text-gray-700 text-sm">Cloud Computing (AWS, Google Cloud)</span>
                         </div>
                       </div>
