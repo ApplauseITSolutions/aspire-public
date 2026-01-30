@@ -304,29 +304,39 @@ const Careers = () => {
 
                 </div>
 
-                {/* Contact Info */}
-                <div className="mt-8 bg-[#EF7F2C] text-white p-6 rounded-lg text-center">
-                  <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-                    <div className="flex items-center">
-                      <span className="font-bold mr-2">FOR MORE DETAILS</span>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="mr-2">🌐</span>
-                      <span>www.aspireks.com/internship</span>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="mr-2">📞</span>
-                      <span>020-25530291</span>
+                {/* Contact Info and Enrollment Fee - Two Cards */}
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  
+                  {/* Contact Info Card */}
+                  <div className="bg-[#EF7F2C] text-white p-6 rounded-lg text-center">
+                    <div className="space-y-3">
+                      <div className="font-bold">FOR MORE DETAILS</div>
+                      <div className="flex items-center justify-center gap-4">
+                        <div className="flex items-center">
+                          <span className="text-white mr-2">🌐</span>
+                          <span>www.aspireks.com/internship</span>
+                        </div>
+                        <div className="flex items-center">
+                          <span className="text-white mr-2">📞</span>
+                          <span>020-25530291</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Enrollment Fee */}
-                <div className="mt-4 bg-[#3D1717] text-white p-6 rounded-lg text-center">
-                  <div className="flex items-center justify-center">
-                    <span className="text-2xl mr-3">🎓</span>
-                    <span className="font-bold">Internship Enrollment fees 1500/- Per Student (GST 18% + Gateway Charges Extra)</span>
+                  {/* Enrollment Fee Card */}
+                  <div className="bg-[#3D1717] text-white p-6 rounded-lg text-center">
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-center">
+                        <span className="text-white text-2xl mr-3">🎓</span>
+                        <span className="font-bold">Internship Enrollment fees 1500/- Per Student</span>
+                      </div>
+                      <div className="text-sm opacity-90">
+                        (GST 18% + Gateway Charges Extra)
+                      </div>
+                    </div>
                   </div>
+
                 </div>
 
                 {/* Action Buttons */}
