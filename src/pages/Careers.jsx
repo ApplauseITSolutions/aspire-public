@@ -90,7 +90,7 @@ const Careers = () => {
           {/* LIFE AT ASPIRE */}
           {activeTab === "life-at-aspire" && (
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-[1fr_537px] gap-6 lg:gap-8 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-[1fr_537px] gap-6 lg:gap-8 items-flex">
                 {/* Left Content */}
                 <div className="space-y-4 pr-4">
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
