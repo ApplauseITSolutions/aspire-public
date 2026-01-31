@@ -141,11 +141,8 @@ const Careers = () => {
                 
                 {/* Header */}
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-[#3D1717] mb-4">
-                    Empowering the Next Generation of
-                  </h2>
-                  <h2 className="text-3xl font-bold text-[#EF7F2C] mb-2">
-                    INNOVATORS
+                  <h2 className="text-3xl font-bold text-[#3D1717] mb-2">
+                    Empowering the Next Generation of <span className="text-[#EF7F2C]">INNOVATORS</span>
                   </h2>
                 </div>
 
