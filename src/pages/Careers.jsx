@@ -217,7 +217,7 @@ const Careers = () => {
                       src={ready4industryImg}
                       alt="Ready4Industry - Empowering Next Generation"
                       className="rounded-lg shadow-lg"
-                      style={{ width: '537px', height: '300px', objectFit: 'fit' }}
+                      style={{ width: '537px', height: '315px', objectFit: 'fit' }}
                     />
                   </div>
 
