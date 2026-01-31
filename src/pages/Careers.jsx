@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import aspireBgImg from "../assets/images/aspire-bg-.png";
 import event1Img from "../assets/images/event1.png";
-import ready4industryImg from "../assets/images/ready for industry.png";
+import ready4industryImg from "../assets/images/ready4industry-img.png";
 
 const Careers = () => {
   const [searchParams] = useSearchParams();
@@ -142,7 +142,7 @@ const Careers = () => {
                 {/* Header */}
                 <div className="text-center mb-8">
                   <h2 className="text-3xl font-bold text-[#3D1717] mb-2">
-                    Empowering the Next Generation of <span className="text-[#EF7F2C]">INNOVATORS</span>
+                    Empowering the Next Generation of <span className="text-[#EF7F2C] font-bold">Innovators</span>
                   </h2>
                 </div>
 
@@ -183,6 +183,16 @@ const Careers = () => {
                         </div>
                         <h4 className="text-lg font-semibold text-[#3D1717] mb-1">Fresh Graduates</h4>
                         <p className="text-gray-600 text-sm">Launch your professional journey</p>
+                        
+                        {/* Know More Button - positioned below Fresh Graduates */}
+                        <div className="mt-4">
+                          <button
+                            onClick={() => window.open("https://ready4industry.com/", "_blank")}
+                            className="px-6 py-2 bg-[#EF7F2C] text-white font-semibold rounded-lg hover:bg-[#d66d24] transition-colors duration-300 shadow-lg text-sm"
+                          >
+                            Know More
+                          </button>
+                        </div>
                       </div>
 
                       {/* Young Professionals */}
@@ -210,16 +220,6 @@ const Careers = () => {
                     />
                   </div>
 
-                </div>
-
-                {/* Know More Button */}
-                <div className="mt-8 text-center">
-                  <button
-                    onClick={() => window.open("https://ready4industry.com/", "_blank")}
-                    className="px-8 py-3 bg-[#EF7F2C] text-white font-semibold rounded-lg hover:bg-[#d66d24] transition-colors duration-300 shadow-lg"
-                  >
-                    Know More
-                  </button>
                 </div>
 
               </div>
