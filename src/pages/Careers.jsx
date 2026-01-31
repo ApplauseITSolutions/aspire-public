@@ -138,7 +138,7 @@ const Careers = () => {
           {/* READY4INDUSTRY */}
           {activeTab === "ready4industry" && (
             <div className="max-w-7xl mx-auto">
-              <div className="py-8">
+              <div className="py-4">
                 
                 {/* Header */}
                 <div className="text-center mb-8">
@@ -251,7 +251,7 @@ const Careers = () => {
           {/* INTERNSHIP */}
           {activeTab === "internship" && (
             <div className="max-w-7xl mx-auto">
-              <div className="py-8">
+              <div className="py-4">
                 
                 {/* Header */}
                 <div className="text-center mb-8">
