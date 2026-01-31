@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import aspireBgImg from "../assets/images/aspire-bg-.png";
 import event1Img from "../assets/images/event1.png";
 import ready4industryImg from "../assets/images/ready4industry-img.png";
+import internshipImg from "../assets/images/internship-img.png";
 
 const Careers = () => {
   const [searchParams] = useSearchParams();
@@ -321,26 +322,15 @@ const Careers = () => {
                     </div>
                   </div>
 
-                  {/* Center Content - Certificate Badge */}
+                  {/* Center Content - Internship Image */}
                   <div className="flex justify-center items-center">
                     <div className="relative">
-                      <div className="w-48 h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-2xl border-4 border-yellow-300">
-                        <div className="text-center">
-                          <div className="text-lg font-bold text-black mb-1" style={{ fontFamily: 'cursive' }}>
-                            Certified by
-                          </div>
-                          <div className="text-base font-bold text-black" style={{ fontFamily: 'cursive' }}>
-                            Top Companies
-                          </div>
-                        </div>
-                      </div>
-                      {/* Red ribbons */}
-                      <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
-                        <div className="flex space-x-1">
-                          <div className="w-6 h-12 bg-red-500 transform rotate-12"></div>
-                          <div className="w-6 h-12 bg-red-600 transform -rotate-12"></div>
-                        </div>
-                      </div>
+                      <img
+                        src={internshipImg}
+                        alt="Internship Program"
+                        className="rounded-lg "
+                        style={{ width: '240px', height: '240px', objectFit: 'cover' }}
+                      />
                     </div>
                   </div>
 
@@ -385,7 +375,7 @@ const Careers = () => {
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                   
                   {/* Contact Info Card */}
-                  <div className="bg-[#EF7F2C] text-white p-6 rounded-lg text-center">
+                  <div className="bg-[#EF7F2C] text-white p-4 rounded-lg text-center">
                     <div className="space-y-3">
                       <div className="font-bold">FOR MORE DETAILS</div>
                       <div className="flex items-center justify-center gap-4">
