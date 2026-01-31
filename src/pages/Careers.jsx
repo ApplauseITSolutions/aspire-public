@@ -408,7 +408,7 @@ const Careers = () => {
                   </div>
 
                   {/* Enrollment Fee Card */}
-                  <div className="bg-[#3D1717] text-white p-6 rounded-lg text-center">
+                  <div className="bg-[#3D1717] text-white p-4 rounded-lg text-center">
                     <div className="space-y-2">
                       <div className="flex items-center justify-center">
                         <svg className="w-6 h-6 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
