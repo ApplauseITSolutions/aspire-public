@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // Import advisory board images
 import colInderImg from "../assets/images/advisory board/Col. Inder S Gahlaut.png";
 import ltGenKochharImg from "../assets/images/advisory board/Lt. Gen. Dr SP Kochhar.jpg";
+import milindKambleImg from "../assets/images/advisory board/Milind Kamble.png";
 import mohanRajuImg from "../assets/images/advisory board/Mr. Mohan Raju.png";
 import pradeepJaswaniImg from "../assets/images/advisory board/Mr. Pradeep Jaswani.jfif";
 import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.png";
@@ -28,6 +29,12 @@ const advisors = [
     title: "CEO Olive Data Centre Pvt.",
     subtitle: "Based in California",
     image: pravinMohiteImg
+  },
+  {
+    name: "Milind Kamble",
+    title: "Chairman of the Dalit Indian , ",
+    subtitle: "Chamber of Commerce and Industry",
+    image: milindKambleImg
   },
   {
     name: "Mr. Mohan Raju",
