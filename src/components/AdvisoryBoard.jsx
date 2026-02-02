@@ -8,7 +8,7 @@ import milindKambleImg from "../assets/images/advisory board/Milind Kamble.png";
 import mohanRajuImg from "../assets/images/advisory board/Mr. Mohan Raju.png";
 import pradeepJaswaniImg from "../assets/images/advisory board/Mr. Pradeep Jaswani.jfif";
 import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.png";
-import sachinItkarImg from "../assets/images/advisory board/Sachin Itkar.jpg";
+import sachinItkarImg from "../assets/images/advisory board/Sachin Itkar.png";
 import shiviKaliaImg from "../assets/images/advisory board/Ms. Shivi Kalia.png";
 import sushmaBhayaniImg from "../assets/images/advisory board/Ms. Sushma Bhayani.png";
 
