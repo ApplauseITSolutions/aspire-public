@@ -719,6 +719,209 @@ const Programs = () => {
                   </button>
                 </div>
               </div>
+
+              {/* Cloud Application Developer */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={cloudTechnologyImg}
+                    alt="Cloud Application Developer"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Cloud Application Developer
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Master cloud application development with modern frameworks and deployment strategies...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Advanced Cloud Infrastructure Analyst */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={advancedBusinessIntelligenceImg}
+                    alt="Advanced Cloud Infrastructure Analyst"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Advanced Cloud Infrastructure Analyst
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Advanced training in cloud infrastructure analysis, optimization, and management...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Principles of IoT - Software Analyst */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={quantumComputingImg}
+                    alt="Principles of IoT - Software Analyst"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Principles of IoT - Software Analyst
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Learn IoT principles, software development, and data analysis for connected devices...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Application Developer - Web & Mobile */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={uiuxDeveloperImg}
+                    alt="Application Developer - Web & Mobile"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Application Developer - Web & Mobile
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in web and mobile application development technologies...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Cyber Security Associate */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={cyberSecurityImg}
+                    alt="Cyber Security Associate"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Cyber Security Associate
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Advanced cybersecurity training covering threat analysis, incident response, and security protocols...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Certified Financial Fraud Investigator */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={aedpImg}
+                    alt="Certified Financial Fraud Investigator"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Certified Financial Fraud Investigator
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Specialized training in financial fraud detection, investigation techniques, and compliance...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* BASE (Business Awareness & Skill Enhancement) */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={campusToCorporateImg}
+                    alt="BASE (Business Awareness & Skill Enhancement)"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      BASE (Business Awareness & Skill Enhancement)
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      60 Hours | 4 Credit Approved by NHEQF. Comprehensive business awareness program focusing on skill...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
       </section>
