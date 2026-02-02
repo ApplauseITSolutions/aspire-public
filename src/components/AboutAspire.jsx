@@ -23,7 +23,7 @@ const AboutAspire = () => {
                     <div className="text-gray-700 leading-relaxed space-y-6 text-[15px] lg:text-base">
                         <div className="group">
                             <p className="text-body group-hover:text-gray-800 transition-colors duration-300 hover:scale-[1.02] transform transition-transform text-justify">
-                                Aspire Knowledge and Skills India Pvt. Ltd. commonly known as ASPIRE represent network of the industry and this journey of networking started with the networking company Jetking since 1997. We are a prestigious AICTE partner, NSDC funded and BOAT partner and hold affiliations across more than seven distinct sector skill councils.
+                                We represent network of the industry and this journey of networking started with the networking company Jetking since 1997 and now we are a prestigious AICTE Partner, NSDC funded & BOAT partner and hold affiliations across more than seven distinct sector skill councils.
                             </p>
                         </div>
 
