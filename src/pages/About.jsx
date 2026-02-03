@@ -148,30 +148,24 @@ const About = () => {
                 {/* Left Content */}
                 <div className="space-y-4 pr-4">
                   <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  Aspire Knowledge and Skills India Pvt. Ltd. commonly known as ASPIRE represent network of the industry and this journey of networking started with the networking company Jetking since 1997. We are a prestigious AICTE partner, NSDC funded and BOAT partner and hold affiliations across more than seven distinct sector skill councils. 
+                  We represent network of the industry and this journey of networking started with the networking company Jetking since 1997 and now we are a prestigious AICTE Partner, NSDC funded & BOAT partner and hold affiliations across more than seven distinct sector skill councils.
                   </p>
-
-                  <div className="space-y-1 ml-0">
-                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>1. Employability Enablement and Entrepreneurship Development</p>
-                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>2. NEP Alignment</p>
-                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>3. Demand-Driven Skill Development</p>
-                  </div>
 
                   <p className="text-gray-800 font-dm-sans font-bold" style={{ fontSize: '16px', lineHeight: '1.4' }}>
                     Our Core Strengths:
                   </p>
 
-                  <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • <span className="font-bold text-[#EF7F2C]">Employability Enablement and Entrepreneurship Development:</span> We enable employability through our industry centric portal and industry association network.
-                  </p>
-
-                  <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • <span className="font-bold text-[#EF7F2C]">NEP Alignment:</span> We implement mentorship-based self-learning models aligned with the National Education Policy.
-                  </p>
-
-                  <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    • <span className="font-bold text-[#EF7F2C]">Demand-Driven Skill Development:</span> We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ industry partners, ensuring students are job-ready.
-                  </p>
+                  <div className="space-y-2 ml-0">
+                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                      • <span className="font-bold text-[#EF7F2C]">Enablement of Employment and Entrepreneurship</span>
+                    </p>
+                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                      • <span className="font-bold text-[#EF7F2C]">Mentorship based self learning model</span>
+                    </p>
+                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                      • <span className="font-bold text-[#EF7F2C]">Seamlessly integrating demand driven skills into formal education</span>
+                    </p>
+                  </div>
                 </div>
 
                 {/* Right Image */}
