@@ -45,13 +45,13 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const { isLoading, setLoading } = useLoading(true, 800);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
-    'profile', 'vision', 'founder', 'advisors'
+    'profile', 'vision', 'founder', 'advisors', 'team'
   ]);
 
   // Set active tab based on URL parameter
   useEffect(() => {
     const tabParam = searchParams.get('tab');
-    if (tabParam && ['profile', 'vision', 'founder', 'advisors'].includes(tabParam)) {
+    if (tabParam && ['profile', 'vision', 'founder', 'advisors', 'team'].includes(tabParam)) {
       setActiveTab(tabParam);
     }
   }, [searchParams]);
@@ -81,7 +81,8 @@ const About = () => {
     { id: "profile", label: "ASPIRE Profile", active: true },
     { id: "vision", label: "Vision & Mission", active: false },
     { id: "founder", label: "Founder's Message", active: false },
-    { id: "advisors", label: "Advisors", active: false }
+    { id: "advisors", label: "Advisors", active: false },
+    { id: "team", label: "Team Members", active: false }
   ];
 
   // Get current tab label
@@ -1381,6 +1382,227 @@ const About = () => {
                   The Industry Advisory Board ensures market relevance and practical application, while the 
                   Academic Advisory Board maintains educational rigor and research-based learning approaches, 
                   creating a perfect balance for holistic skill development.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      )}
+
+      {/* TEAM MEMBERS SECTION */}
+      {activeTab === "team" && (
+        <section className="bg-white py-12 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                Our Team
+              </span>
+              <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                Team Members
+              </h2>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Meet our dedicated team of professionals who drive innovation, excellence, and success 
+                in skill development and industry partnerships.
+              </p>
+            </div>
+
+            {/* Team Members Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              
+              {/* Mr. Bhuvanesh Kulkarni */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      {/* Placeholder for image */}
+                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">BK</span>
+                          </div>
+                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Bhuvanesh Kulkarni
+                    </h3>
+                    <div className="min-h-[36px] flex items-center justify-center">
+                      <p className="text-xs text-orange-600 font-medium">Catalyst</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Prashant Pund */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      {/* Placeholder for image */}
+                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">PP</span>
+                          </div>
+                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Prashant Pund
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Core Business Strategist</p>
+                      <a 
+                        href="https://www.linkedin.com/in/prashant-pund-65b7b51b" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mrs. Minal Gujarathi */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      {/* Placeholder for image */}
+                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">MG</span>
+                          </div>
+                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mrs. Minal Gujarathi
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Education Delivery Specialist</p>
+                      <a 
+                        href="https://www.linkedin.com/in/minal-saraf-2737501b" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Amit Gandhi */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      {/* Placeholder for image */}
+                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">AG</span>
+                          </div>
+                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Amit Gandhi
+                    </h3>
+                    <div className="min-h-[36px] flex items-center justify-center">
+                      <p className="text-xs text-orange-600 font-medium">Partnering Engagement</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mrs. Neha Gupta */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      {/* Placeholder for image */}
+                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">NG</span>
+                          </div>
+                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mrs. Neha Gupta
+                    </h3>
+                    <div className="min-h-[36px] flex items-center justify-center">
+                      <p className="text-xs text-orange-600 font-medium">Business Operations</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Ms. Supriya */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      {/* Placeholder for image */}
+                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">S</span>
+                          </div>
+                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Ms. Supriya
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Industry Linkages</p>
+                      <p className="text-xs text-orange-600 font-medium">NAPS & BOAT</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Bottom Section */}
+            <div className="mt-16 text-center">
+              <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
+                <h3 className="text-2xl font-bold text-[#3D1717] mb-4">
+                  Collaborative Excellence
+                </h3>
+                <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                  Our diverse team brings together expertise in business strategy, education delivery, 
+                  industry partnerships, and operational excellence. Each member contributes unique skills 
+                  and perspectives to drive our mission of bridging the gap between education and industry requirements.
                 </p>
               </div>
             </div>
