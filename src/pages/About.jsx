@@ -175,7 +175,7 @@ const About = () => {
                     src={n8Img}
                     alt="ASPIRE Office"
                     className="rounded-lg shadow-lg"
-                    style={{ width: '537px', height: '391px', objectFit: 'cover' }}
+                    style={{ width: '537px', height: '280px', objectFit: 'cover' }}
                   />
                 </div>
               </div>
