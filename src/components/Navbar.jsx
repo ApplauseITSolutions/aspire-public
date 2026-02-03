@@ -32,7 +32,7 @@ const Navbar = () => {
           <img
             src={aspireLogo}
             alt="Aspire Logo"
-            className="h-12 sm:h-14 w-32 sm:w-36 object-contain"
+            className="h-12 sm:h-14 w-32 sm:w-36 object-fit"
           />
         </Link>
 
