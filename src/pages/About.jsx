@@ -106,7 +106,7 @@ const About = () => {
           backgroundImage: `url(${aspireBgImg})`,
           height: '141px',
           maxWidth: '1440px',
-          margin: '32px auto'
+          margin: '34px auto'
         }}
       >
         {/* Content */}
