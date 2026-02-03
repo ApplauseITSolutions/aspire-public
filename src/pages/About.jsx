@@ -1392,7 +1392,7 @@ const About = () => {
 
       {/* TEAM MEMBERS SECTION */}
       {activeTab === "team" && (
-        <section className="bg-white py-12 w-full">
+        <section className="bg-white py-4 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             
             {/* Section Header */}
