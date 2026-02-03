@@ -20,6 +20,7 @@ import colInderImg from "../assets/images/advisory board/Col. Inder S Gahlaut.pn
 import ltGenKochharImg from "../assets/images/advisory board/Lt. Gen. Dr SP Kochhar.jpg";
 import minalMamImg from "../assets/images/advisory board/minal mam.jpg";
 import mohanRajuImg from "../assets/images/advisory board/Mr. Mohan Raju.png";
+import nehaGuptaImg from "../assets/images/advisory board/neha gupta.jpg";
 import pradeepJaswaniImg from "../assets/images/advisory board/Mr. Pradeep Jaswani.jfif";
 import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.png";
 import shiviKaliaImg from "../assets/images/advisory board/Ms. Shivi Kalia.png";
@@ -1532,15 +1533,11 @@ const About = () => {
                 <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
                   <div className="relative overflow-hidden">
                     <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                      {/* Placeholder for image */}
-                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
-                            <span className="text-white font-bold text-xl">NG</span>
-                          </div>
-                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
-                        </div>
-                      </div>
+                      <img
+                        src={nehaGuptaImg}
+                        alt="Mrs. Neha Gupta"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
                   </div>
                   <div className="p-4 text-center flex-1 flex flex-col justify-center">
