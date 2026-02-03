@@ -32,15 +32,15 @@ const AboutAspire = () => {
                             
                             <div className="space-y-3">
                                 <p className="text-body text-justify">
-                                    <span className="font-bold text-orange-500">Employability Enablement and Entrepreneurship Development:</span> We enable employability through our industry centric portal and industry association network.
+                                    <span className="font-bold text-orange-500">• Enablement of Employment and Entrepreneurship</span>
                                 </p>
                                 
                                 <p className="text-body text-justify">
-                                    <span className="font-bold text-orange-500">NEP Alignment:</span> We implement mentorship-based self-learning models aligned with the National Education Policy.
+                                    <span className="font-bold text-orange-500">• Mentorship based self learning model</span>
                                 </p>
                                 
                                 <p className="text-body text-justify">
-                                    <span className="font-bold text-orange-500">Demand-Driven Skill Development:</span> We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
+                                    <span className="font-bold text-orange-500">• Seamlessly integrating demand driven skills into formal education</span>
                                 </p>
                             </div>
                         </div>
