@@ -330,14 +330,15 @@ const Programs = () => {
                       Cyber Security
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                      ASPIRE focus on strategic consulting, Training Need
-                      Analysis, Learning Design, e-learning, Training Delivery,
-                      Customized Content Development Competency...
+                      Comprehensive cybersecurity training covering threat detection, security tools, risk management, and incident response for industry readiness...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/cyber-security" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -862,9 +863,12 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Advanced cybersecurity training covering threat analysis, incident response, and security protocols...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/cyber-security" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 

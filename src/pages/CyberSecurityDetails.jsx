@@ -1,0 +1,229 @@
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBook, FaCheckCircle } from 'react-icons/fa';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import PageLoader from "../components/PageLoader";
+import { useLoading } from "../hooks/useLoading";
+import aspireBgImg from "../assets/images/aspire-bg-.png";
+import cyberSecurityImg from "../assets/images/Hero section-aspire/Cyber Security.png";
+import certificateImg from "../assets/images/program detail page icons/certificate.png";
+
+const CyberSecurityDetails = () => {
+  const { isLoading, setLoading } = useLoading(true, 800);
+
+  useEffect(() => {
+    const pageTimer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout(pageTimer);
+    };
+  }, []);
+
+  if (isLoading) {
+    return <PageLoader />;
+  }
+
+  return (
+    <div className="font-dm-sans">
+      <Header />
+      
+      {/* Spacer for fixed header */}
+      <div className="h-[104px]"></div>
+      
+      {/* BANNER SECTION */}
+      <section
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${aspireBgImg})`,
+          height: '141px',
+          maxWidth: '1440px',
+          margin: '34px auto'
+        }}
+      >
+        <div className="flex items-center justify-center h-full">
+          <h1 className="text-4xl sm:text-3xl lg:text-2xl font-bold text-[#3D1717]">
+            Programs
+          </h1>
+        </div>
+      </section>
+
+      {/* PROGRAM DETAILS SECTION */}
+      <section className="bg-white py-4">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Back to Programs Link */}
+          <div className="mb-4">
+            <Link 
+              to="/programs" 
+              className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-medium transition-colors"
+            >
+              ← Back to Programs
+            </Link>
+          </div>
+
+          {/* Program Content */}
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-2 items-start max-w-7xl">
+            {/* Left - Image */}
+            <div className="flex-shrink-0 w-full lg:w-auto">
+              <div className="rounded-xl overflow-hidden shadow-xl w-full max-w-full lg:max-w-none" style={{ maxWidth: '669px', height: '291px' }}>
+                <img
+                  src={cyberSecurityImg}
+                  alt="Cyber Security Associate"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right - Content */}
+            <div className="flex-1 lg:ml-8 w-full">
+              <h1 className="text-2xl font-bold text-[#EF7F2C] mb-3">
+                Cyber Security Associate
+              </h1>
+              
+              <p className="text-gray-600 text-16px leading-normal mb-8">
+                The Cyber Security Associate program is designed to equip students with comprehensive knowledge and practical skills in cybersecurity. This program covers essential security concepts, threat analysis, risk management, and hands-on experience with security tools and technologies.
+              </p>
+
+              <p className="text-gray-600 text-16px leading-normal mb-6">
+                Students will learn to identify vulnerabilities, implement security measures, and respond to cyber threats effectively, preparing them for careers in the rapidly growing cybersecurity field.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-row gap-4">
+                <button className="bg-[#EF7F2C] text-white font-medium hover:bg-[#d6691f] transition-colors duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2" style={{ width: '164px', height: '36px', borderRadius: '8px' }}>
+                  Apply Now
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </button>
+                <button className="border border-[#EF7F2C] text-[#EF7F2C] bg-white font-medium hover:bg-[#fff1e4] transition-colors duration-300 flex items-center justify-center gap-2" style={{ width: '164px', height: '36px', borderRadius: '8px' }}>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Program Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* COURSE DETAILS SECTION */}
+      <section className="bg-[#f8f6f3] py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="inline-block bg-white text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+              Featured Course
+            </span>
+            <h2 className="text-2xl font-bold text-[#3D1717] mb-4">
+              Cyber Security Associate
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive 60-hour program designed to develop industry-ready cybersecurity professionals
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
+            {/* Left Side - Course Overview Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-l-orange-500 w-full max-w-lg">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#3D1717]">Course Overview</h3>
+                  <p className="text-gray-600 text-sm">Cyber Security Associate</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-3 border-b border-gray-100">
+                  <span className="font-medium text-gray-700">Duration</span>
+                  <span className="font-bold text-orange-600 text-lg">60 Hours</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-100">
+                  <span className="font-medium text-gray-700">Credits</span>
+                  <span className="font-bold text-orange-600 text-lg">4 Credits</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-100">
+                  <span className="font-medium text-gray-700">Delivery Mode</span>
+                  <span className="text-gray-800 font-medium">Offline/Online/Hybrid</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="font-medium text-gray-700">Internship</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
+                    ✓ Included
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Eligibility Card */}
+            <div className="bg-[#fff8f3] rounded-2xl shadow-lg p-8 w-full max-w-lg">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#8B4513]">Eligibility Criteria</h3>
+                  <p className="text-gray-600 text-sm">Who can apply</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border-l-4 border-l-orange-500">
+                  <h4 className="font-bold text-[#8B4513] mb-2">Academic Requirements</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Students appearing for <span className="font-semibold text-[#8B4513]">3rd year diploma</span> after 12th grade completion.
+                  </p>
+                </div>
+                
+                <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border-l-4 border-l-orange-500">
+                  <h4 className="font-bold text-[#8B4513] mb-2">Alternative Path</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Students currently enrolled in the <span className="font-semibold text-[#8B4513]">2nd year</span> of any Undergraduate Degree Program.
+                  </p>
+                </div>
+                
+                <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <FaBook className="w-5 h-5 text-orange-500" />
+                    <h4 className="font-bold text-orange-500">PROGRAM BENEFITS</h4>
+                  </div>
+                  <ul className="text-gray-700 text-sm space-y-2">
+                    <li className="flex items-center gap-2">
+                      <FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      Industry-standard security training
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      Hands-on cybersecurity labs
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      Professional certification preparation
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+      <Footer />
+    </div>
+  );
+};
+
+export default CyberSecurityDetails;

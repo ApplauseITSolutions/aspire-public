@@ -9,6 +9,7 @@ import GuaranteedInternshipDetails from "./pages/GuaranteedInternshipDetails";
 import CampusToCorporateDetails from "./pages/CampusToCorporateDetails";
 import UIUXDeveloperDetails from "./pages/UIUXDeveloperDetails";
 import CloudTechnologyDetails from "./pages/CloudTechnologyDetails";
+import CyberSecurityDetails from "./pages/CyberSecurityDetails";
 import EEDPDetails from "./pages/EEDPDetails";
 import Careers from "./pages/Careers";
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/programs/campus-to-corporate" element={<CampusToCorporateDetails />} />
         <Route path="/programs/uiux-developer" element={<UIUXDeveloperDetails />} />
         <Route path="/programs/cloud-technology" element={<CloudTechnologyDetails />} />
+        <Route path="/programs/cyber-security" element={<CyberSecurityDetails />} />
         <Route path="/programs/eedp" element={<EEDPDetails />} />
       </Routes>
     </Router>
