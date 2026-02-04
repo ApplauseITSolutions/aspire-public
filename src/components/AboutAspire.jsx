@@ -23,8 +23,9 @@ const AboutAspire = () => {
                     {/* LEFT TEXT */}
                     <div className="text-gray-700 leading-relaxed space-y-6 text-[15px] lg:text-base">
                         <div className="group">
+                            {/* <h3 className="font-bold text-[#3D1717] text-base mb-3">Our Pedagogy:</h3> */}
                             <p className="text-body group-hover:text-gray-800 transition-colors duration-300 hover:scale-[1.02] transform transition-transform text-justify">
-                                We represent network of the industry and this journey of networking started with the networking company Jetking since 1997 and now we are a prestigious AICTE Partner, NSDC funded & BOAT partner and hold affiliations across more than seven distinct sector skill councils.
+                                We are a "New-Age GPS" for every student, helping them navigate their unique paths to success. Our commitment is to provide unwavering support throughout their academic and career journeys until their dreams are realized.
                             </p>
                         </div>
 
