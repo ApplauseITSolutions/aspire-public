@@ -265,7 +265,7 @@ const EEDPDetails = () => {
             </div>
 
             {/* Right Side - Eligibility Card */}
-            <div className="bg-[#F5F1E8] rounded-2xl shadow-lg p-8 border border-orange-200">
+            <div className="bg-[#fff8f3] rounded-2xl shadow-lg p-8 border border-orange-200">
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-3">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
