@@ -211,50 +211,97 @@ const EEDPDetails = () => {
         </div>
       </section>
 
-      {/* COURSE DETAILS TABLE SECTION */}
-      <section className="bg-white py-8">
+      {/* COURSE DETAILS SECTION */}
+      <section className="bg-[#FFF1E4] py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-[#3D1717] mb-8 text-center">
-            Course Details - Advanced Business Intelligence Analyst
-          </h2>
+          <div className="text-center mb-12">
+            <span className="inline-block bg-white text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+              Featured Course
+            </span>
+            <h2 className="text-2xl font-bold text-[#3D1717] mb-4">
+              Advanced Business Intelligence Analyst
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Comprehensive 60-hour program designed to develop industry-ready business intelligence professionals
+            </p>
+          </div>
           
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden shadow-lg">
-              <thead>
-                <tr className="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                  <th className="border border-gray-300 px-6 py-4 text-left font-bold">Course Name</th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-bold">Duration (in Hours)</th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-bold">Eligibility</th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-bold">Mode of Academic Delivery (Online / Offline / Hybrid)</th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-bold">Internship (Yes/No)</th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-bold">Credits</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-900">
-                    Advanced Business Intelligence Analyst
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center font-bold text-blue-600">
-                    60 Hrs
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center text-sm">
-                    Appearing 3<sup>rd</sup> yr diploma after 12th or 2<sup>nd</sup> yr UG Degree Program
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
-                    Offline/Online /Hybrid
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
-                      Yes
-                    </span>
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center font-bold text-orange-600 text-lg">
-                    4
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Left Side - Course Overview Card */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-l-orange-500">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#3D1717]">Course Overview</h3>
+                  <p className="text-gray-600 text-sm">Advanced Business Intelligence Analyst</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-3 border-b border-gray-100">
+                  <span className="font-medium text-gray-700">Duration</span>
+                  <span className="font-bold text-orange-600 text-lg">60 Hours</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-100">
+                  <span className="font-medium text-gray-700">Credits</span>
+                  <span className="font-bold text-orange-600 text-lg">4 Credits</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-100">
+                  <span className="font-medium text-gray-700">Delivery Mode</span>
+                  <span className="text-gray-800 font-medium">Offline/Online/Hybrid</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="font-medium text-gray-700">Internship</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                    ✓ Included
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Eligibility Card */}
+            <div className="bg-gradient-to-br from-[#3D1717] to-[#5a2a2a] rounded-2xl shadow-lg p-8 text-white">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Eligibility Criteria</h3>
+                  <p className="text-white/80 text-sm">Who can apply for this program</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <h4 className="font-bold text-orange-400 mb-2">Academic Requirements</h4>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    Students appearing for 3<sup>rd</sup> year diploma after 12th grade
+                  </p>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <h4 className="font-bold text-orange-400 mb-2">Alternative Path</h4>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    Students in 2<sup>nd</sup> year of UG Degree Program
+                  </p>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                  <h4 className="font-bold text-orange-400 mb-2">Program Benefits</h4>
+                  <ul className="text-white/90 text-sm space-y-1">
+                    <li>• Industry-relevant curriculum</li>
+                    <li>• Hands-on project experience</li>
+                    <li>• Professional certification</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
