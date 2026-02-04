@@ -213,7 +213,7 @@ const EEDPDetails = () => {
       </section>
 
       {/* COURSE DETAILS SECTION */}
-      <section className="bg-[#F8F6F3] py-12">
+      <section className="bg-[#FFF1E4] py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="inline-block bg-white text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
@@ -265,7 +265,7 @@ const EEDPDetails = () => {
             </div>
 
             {/* Right Side - Eligibility Card */}
-            <div className="bg-[#fff8f3] rounded-2xl shadow-lg p-8 border border-orange-200">
+            <div className="bg-[#F5F1E8] rounded-2xl shadow-lg p-8 border border-orange-200">
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-3">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
