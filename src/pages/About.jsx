@@ -717,13 +717,13 @@ const About = () => {
                   • Establishment of Electronics Science Skill Lab for 10K+ students to provide hands on training in Electronic Equipment Maintenance Skills
                 </p>
 
-                <p className="text-gray-800 font-dm-sans font-bold mt-3" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                {/* <p className="text-gray-800 font-dm-sans font-bold mt-3" style={{ fontSize: '16px', lineHeight: '1.4' }}>
                   Our Pedagogy:
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
                   We are a "New-Age GPS" for every student, helping them navigate their unique paths to success. Our commitment is to provide unwavering support throughout their academic and career journeys until their dreams are realized.
-                </p>
+                </p> */}
               </div>
 
               {/* Right Image */}
@@ -732,7 +732,7 @@ const About = () => {
                   src={mrAbhayJereImg}
                   alt="Mr. Abhay Jere"
                   className="rounded-lg shadow-lg"
-                  style={{ width: '497px', height: '373px', objectFit: 'cover' }}
+                  style={{ width: '497px', height: '290px', objectFit: 'cover' }}
                 />
               </div>
             </div>
