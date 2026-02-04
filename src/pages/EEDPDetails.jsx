@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaBook, FaCheckCircle } from 'react-icons/fa';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
@@ -212,7 +213,7 @@ const EEDPDetails = () => {
       </section>
 
       {/* COURSE DETAILS SECTION */}
-      <section className="bg-[#FFF1E4] py-12">
+      <section className="bg-[#F8F6F3] py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="inline-block bg-white text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
@@ -264,7 +265,7 @@ const EEDPDetails = () => {
             </div>
 
             {/* Right Side - Eligibility Card */}
-            <div className="bg-gradient-to-br from-[#3D1717] to-[#5a2a2a] rounded-2xl shadow-lg p-8 text-white">
+            <div className="bg-[#F5F1E8] rounded-2xl shadow-lg p-8 border border-orange-200">
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-3">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -272,32 +273,44 @@ const EEDPDetails = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Eligibility Criteria</h3>
-                  <p className="text-white/80 text-sm">Who can apply for this program</p>
+                  <h3 className="text-xl font-bold text-[#8B4513]">Eligibility Criteria</h3>
+                  <p className="text-gray-600 text-sm">Who can apply</p>
                 </div>
               </div>
               
               <div className="space-y-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <h4 className="font-bold text-orange-400 mb-2">Academic Requirements</h4>
-                  <p className="text-white/90 text-sm leading-relaxed">
-                    Students appearing for 3<sup>rd</sup> year diploma after 12th grade
+                <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border-l-4 border-l-orange-500">
+                  <h4 className="font-bold text-[#8B4513] mb-2">Academic Requirements</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Students appearing for <span className="font-semibold text-[#8B4513]">3rd year diploma</span> after 12th grade completion.
                   </p>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <h4 className="font-bold text-orange-400 mb-2">Alternative Path</h4>
-                  <p className="text-white/90 text-sm leading-relaxed">
-                    Students in 2<sup>nd</sup> year of UG Degree Program
+                <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border-l-4 border-l-orange-500">
+                  <h4 className="font-bold text-[#8B4513] mb-2">Alternative Path</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Students currently enrolled in the <span className="font-semibold text-[#8B4513]">2nd year</span> of any Undergraduate Degree Program.
                   </p>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <h4 className="font-bold text-orange-400 mb-2">Program Benefits</h4>
-                  <ul className="text-white/90 text-sm space-y-1">
-                    <li>• Industry-relevant curriculum</li>
-                    <li>• Hands-on project experience</li>
-                    <li>• Professional certification</li>
+                <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <FaBook className="w-5 h-5 text-orange-500" />
+                    <h4 className="font-bold text-orange-500">PROGRAM BENEFITS</h4>
+                  </div>
+                  <ul className="text-gray-700 text-sm space-y-2">
+                    <li className="flex items-center gap-2">
+                      <FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      Industry-relevant curriculum
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      Hands-on project experience
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <FaCheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0" />
+                      Professional certification
+                    </li>
                   </ul>
                 </div>
               </div>
