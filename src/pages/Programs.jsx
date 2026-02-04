@@ -366,9 +366,12 @@ const Programs = () => {
                       Customized Content Development Competency...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <Link 
+                    to="/programs/eedp" 
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors"
+                  >
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               </div>
 
