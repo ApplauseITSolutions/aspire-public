@@ -256,7 +256,7 @@ const EEDPDetails = () => {
                 </div>
                 <div className="flex justify-between items-center py-3">
                   <span className="font-medium text-gray-700">Internship</span>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
                     ✓ Included
                   </span>
                 </div>
