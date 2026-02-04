@@ -1,4 +1,5 @@
 import aboutImg from "../assets/images/MrAbhayJere.jfif";
+import { FaBriefcase, FaUserGraduate, FaCogs } from 'react-icons/fa';
 
 const AboutAspire = () => {
     return (
@@ -27,21 +28,39 @@ const AboutAspire = () => {
                             </p>
                         </div>
 
-                        <div className="mt-2">
-                            <h3 className="font-bold text-[#3D1717] text-base mb-3">Our Core Strengths:</h3>
+                        <div className="mt-8">
+                            <h3 className="font-bold text-[#3D1717] text-lg mb-6">Our Core Strengths:</h3>
                             
-                            <div className="space-y-3">
-                                <p className="text-body text-justify">
-                                    <span className="font-bold text-orange-500">• Enablement of Employment and Entrepreneurship</span>
-                                </p>
-                                
-                                <p className="text-body text-justify">
-                                    <span className="font-bold text-orange-500">• Mentorship based self learning model</span>
-                                </p>
-                                
-                                <p className="text-body text-justify">
-                                    <span className="font-bold text-orange-500">• Seamlessly integrating demand driven skills into formal education</span>
-                                </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {/* Card 1 - Employment & Entrepreneurship */}
+                                <div className="bg-gradient-to-b from-orange-50 to-orange-100 p-6 rounded-xl border border-orange-200 hover:shadow-xl hover:scale-[1.05] transition-all duration-300 group aspect-square flex flex-col items-center justify-center text-center">
+                                    <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                                        <FaBriefcase className="w-10 h-10 text-orange-500" />
+                                    </div>
+                                    <h4 className="font-bold text-[#3D1717] text-sm leading-tight group-hover:text-orange-600 transition-colors">
+                                        Enablement of Employment and Entrepreneurship
+                                    </h4>
+                                </div>
+
+                                {/* Card 2 - Mentorship */}
+                                <div className="bg-gradient-to-b from-orange-50 to-orange-100 p-6 rounded-xl border border-orange-200 hover:shadow-xl hover:scale-[1.05] transition-all duration-300 group aspect-square flex flex-col items-center justify-center text-center">
+                                    <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                                        <FaUserGraduate className="w-10 h-10 text-orange-500" />
+                                    </div>
+                                    <h4 className="font-bold text-[#3D1717] text-sm leading-tight group-hover:text-orange-600 transition-colors">
+                                        Mentorship based self learning model
+                                    </h4>
+                                </div>
+
+                                {/* Card 3 - Skills Integration */}
+                                <div className="bg-gradient-to-b from-orange-50 to-orange-100 p-6 rounded-xl border border-orange-200 hover:shadow-xl hover:scale-[1.05] transition-all duration-300 group aspect-square flex flex-col items-center justify-center text-center">
+                                    <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                                        <FaCogs className="w-12 h-12 text-orange-500" />
+                                    </div>
+                                    <h4 className="font-bold text-[#3D1717] text-sm leading-tight group-hover:text-orange-600 transition-colors">
+                                        Seamlessly integrating demand driven skills into formal education
+                                    </h4>
+                                </div>
                             </div>
                         </div>
                     </div>
