@@ -113,12 +113,16 @@ const Footer = () => {
           <div className="space-y-4 text-sm text-gray-300">
             <div className="flex items-center gap-3">
               <img src={mailIcon} alt="Email" className="w-4 h-4" />
-              info@aspireks.com
+              <a href="mailto:info@aspireks.com" className="hover:text-orange-500 transition-colors">
+                info@aspireks.com
+              </a>
             </div>
 
             <div className="flex items-center gap-3">
               <img src={callIcon} alt="Phone" className="w-4 h-4" />
-              020-25530291
+              <a href="tel:+912025530291" className="hover:text-orange-500 transition-colors">
+                020-25530291
+              </a>
             </div>
 
             <div className="flex items-start gap-3">
