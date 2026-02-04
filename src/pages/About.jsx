@@ -146,40 +146,76 @@ const About = () => {
           {/* ASPIRE PROFILE */}
           {activeTab === "profile" && (
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-[1fr_537px] gap-6 lg:gap-8 items-start">
-                {/* Left Content */}
-                <div className="space-y-4 pr-4">
-                  <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  We represent network of the industry and this journey of networking started with the networking company Jetking since 1997 and now we are a prestigious AICTE Partner, NSDC funded & BOAT partner and hold affiliations across more than seven distinct sector skill councils.
-                  </p>
+              {/* WHAT DEFINES US SECTION - FULL WIDTH */}
+              <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[#f8f6f3] py-12">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                  <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-12">
+                    What Defines Us
+                  </h2>
 
-                  <p className="text-gray-800 font-dm-sans font-bold" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                    Our Core Strengths:
-                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
+                    {/* Enablement of Employment and Entrepreneurship */}
+                    <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
+                      {/* Gradient overlay on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
 
-                  <div className="space-y-2 ml-0">
-                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                      • <span className="font-bold text-[#EF7F2C]">Enablement of Employment and Entrepreneurship</span>
-                    </p>
-                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                      • <span className="font-bold text-[#EF7F2C]">Mentorship based self learning model</span>
-                    </p>
-                    <p className="text-gray-800 font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                      • <span className="font-bold text-[#EF7F2C]">Seamlessly integrating demand driven skills into formal education</span>
-                    </p>
+                      <div className="relative z-10">
+                        <div className="mb-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-[#EF7F2C] to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                            <Briefcase className="w-6 h-6 text-white" />
+                          </div>
+                        </div>
+                        <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
+                          Enablement of Employment and Entrepreneurship
+                        </h3>
+                        <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                          We enable employability through our industry centric portal and industry association network.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* NEP Alignment */}
+                    <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
+                      {/* Gradient overlay on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+
+                      <div className="relative z-10">
+                        <div className="mb-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-[#EF7F2C] to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                            <Users className="w-6 h-6 text-white" />
+                          </div>
+                        </div>
+                        <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
+                          NEP Alignment
+                        </h3>
+                        <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                          We implement mentorship-based self-learning models aligned with the National Education Policy.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Demand-Driven Skill Development */}
+                    <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
+                      {/* Gradient overlay on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+
+                      <div className="relative z-10">
+                        <div className="mb-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-[#EF7F2C] to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                            <BookOpen className="w-6 h-6 text-white" />
+                          </div>
+                        </div>
+                        <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
+                          Demand-Driven Skill Development
+                        </h3>
+                        <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
+                          We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                {/* Right Image */}
-                <div className="flex justify-center lg:justify-start">
-                  <img
-                    src={n8Img}
-                    alt="ASPIRE Office"
-                    className="rounded-lg shadow-lg"
-                    style={{ width: '537px', height: '280px', objectFit: 'cover' }}
-                  />
-                </div>
-              </div>
+              </section>
 
               {/* RECOGNIZED & AFFILIATED WITH SECTION */}
               <div className="mt-12">
@@ -602,79 +638,6 @@ const About = () => {
                   <div className="mt-0 pt-2">
                     <p className="text-[#3D1717] font-medium">- Dr. Sanjay Gandhi</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* WHAT DEFINES US SECTION - FULL WIDTH */}
-      {activeTab === "profile" && (
-        <section className="bg-[#f8f6f3] py-12 w-full">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-12">
-              What Defines Us
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
-              {/* Enablement of Employment and Entrepreneurship */}
-              <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-
-                <div className="relative z-10">
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#EF7F2C] to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                      <Briefcase className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
-                    Enablement of Employment and Entrepreneurship
-                  </h3>
-                  <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                    We enable employability through our industry centric portal and industry association network.
-                  </p>
-                </div>
-              </div>
-
-              {/* NEP Alignment */}
-              <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-
-                <div className="relative z-10">
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#EF7F2C] to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                      <Users className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
-                    NEP Alignment
-                  </h3>
-                  <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                    We implement mentorship-based self-learning models aligned with the National Education Policy.
-                  </p>
-                </div>
-              </div>
-
-              {/* Demand-Driven Skill Development */}
-              <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-
-                <div className="relative z-10">
-                  <div className="mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#EF7F2C] to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                      <BookOpen className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
-                    Demand-Driven Skill Development
-                  </h3>
-                  <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                    We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
-                  </p>
                 </div>
               </div>
             </div>
