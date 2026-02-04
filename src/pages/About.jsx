@@ -694,7 +694,7 @@ const About = () => {
                 </h2>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                 More than 150+ academic MOUs with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
+                  • More than 200+ academic MOUs with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
                 </p>
 
                 <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
