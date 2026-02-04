@@ -633,13 +633,12 @@ const About = () => {
                     Enablement of Employment and Entrepreneurship
                   </h3>
                   <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                    We don't just train; we enable. Our programs are designed to create job-ready professionals
-                    and empower aspiring entrepreneurs with the skills and confidence to build their own ventures.
+                    We enable employability through our industry centric portal and industry association network.
                   </p>
                 </div>
               </div>
 
-              {/* Mentorship-based self-learning model */}
+              {/* NEP Alignment */}
               <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
@@ -651,17 +650,15 @@ const About = () => {
                     </div>
                   </div>
                   <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
-                    Mentorship-based self-learning model
+                    NEP Alignment
                   </h3>
                   <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                    Our unique approach combines expert mentorship with self-paced learning, fostering
-                    independence while providing guidance. Students learn by doing, with mentors available
-                    to support their journey.
+                    We implement mentorship-based self-learning models aligned with the National Education Policy.
                   </p>
                 </div>
               </div>
 
-              {/* Integration of demand-driven skills */}
+              {/* Demand-Driven Skill Development */}
               <div className="group bg-white p-4 sm:p-6 rounded-2xl border border-[#EF7F2C] border-l-4 border-l-[#EF7F2C] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden min-h-[250px] sm:min-h-[275px]">
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
@@ -673,11 +670,10 @@ const About = () => {
                     </div>
                   </div>
                   <h3 className="text-base font-bold text-[#EF7F2C] mb-3 group-hover:text-orange-600 transition-colors duration-300">
-                    Integration of demand-driven skills into formal education
+                    Demand-Driven Skill Development
                   </h3>
                   <p className="text-body text-gray-700 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
-                    We bridge the gap between academia and industry by integrating real-world, market-driven
-                    skills into formal education, ensuring our graduates are ready for the challenges of tomorrow.
+                    We seamlessly integrate industry relevant credit sanctioned courses into formal education using strategic alliance of our 250+ companies, ensuring students are job-ready.
                   </p>
                 </div>
               </div>
