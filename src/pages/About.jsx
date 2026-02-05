@@ -225,164 +225,159 @@ const About = () => {
 
                 {/* Auto-scrolling container */}
                 <div className="overflow-hidden relative bg-gray-50 py-4 rounded-xl">
-                  <div className="flex animate-scroll-left space-x-8" style={{ width: 'calc(200% + 2rem)' }}>
-                    {/* First set of cards */}
-                    <div className="flex space-x-8 flex-shrink-0" style={{ width: 'calc(100% - 1rem)' }}>
-                      {/* AICTE */}
-                      <div className="group text-center p-6 bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">AICTE</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300">
-                            All India Council for Technical Education
-                          </p>
-                        </div>
+                  <div className="flex animate-scroll gap-8" style={{ width: 'max-content' }}>
+                    {/* AICTE */}
+                    <div className="group text-center p-6 bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">AICTE</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300">
+                          All India Council for Technical Education
+                        </p>
                       </div>
+                    </div>
 
-                      {/* NSDC */}
-                      <div className="group text-center p-6 bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-green-600 mb-3 group-hover:scale-110 transition-transform duration-300">NSDC</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-green-700 transition-colors duration-300">
-                            National Skill Development Corporation
-                          </p>
-                        </div>
+                    {/* NSDC */}
+                    <div className="group text-center p-6 bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-green-600 mb-3 group-hover:scale-110 transition-transform duration-300">NSDC</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-green-700 transition-colors duration-300">
+                          National Skill Development Corporation
+                        </p>
                       </div>
+                    </div>
 
-                      {/* BOAT */}
-                      <div className="group text-center p-6 bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-purple-600 mb-3 group-hover:scale-110 transition-transform duration-300">BOAT</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-purple-700 transition-colors duration-300">
-                            Board of Apprenticeship Training
-                          </p>
-                        </div>
+                    {/* BOAT */}
+                    <div className="group text-center p-6 bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-purple-600 mb-3 group-hover:scale-110 transition-transform duration-300">BOAT</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-purple-700 transition-colors duration-300">
+                          Board of Apprenticeship Training
+                        </p>
                       </div>
+                    </div>
 
-                      {/* SSCs */}
-                      <div className="group text-center p-6 bg-white border-2 border-orange-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-orange-600 mb-3 group-hover:scale-110 transition-transform duration-300">SSCs</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-orange-700 transition-colors duration-300">
-                            Sector Skill Councils
-                          </p>
-                        </div>
+                    {/* SSCs */}
+                    <div className="group text-center p-6 bg-white border-2 border-orange-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-orange-600 mb-3 group-hover:scale-110 transition-transform duration-300">SSCs</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-orange-700 transition-colors duration-300">
+                          Sector Skill Councils
+                        </p>
                       </div>
+                    </div>
 
-                      {/* Maharashtra Government */}
-                      <div className="group text-center p-6 bg-white border-2 border-red-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform duration-300">MAH</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-red-700 transition-colors duration-300">
-                            Government of Maharashtra
-                          </p>
-                        </div>
+                    {/* Maharashtra Government */}
+                    <div className="group text-center p-6 bg-white border-2 border-red-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-3xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform duration-300">MAH</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-red-700 transition-colors duration-300">
+                          Government of Maharashtra
+                        </p>
                       </div>
+                    </div>
 
-                      {/* Gujarat Government */}
-                      <div className="group text-center p-6 bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-indigo-600 mb-3 group-hover:scale-110 transition-transform duration-300">GUJ</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors duration-300">
-                            Government of Gujarat
-                          </p>
-                        </div>
+                    {/* Gujarat Government */}
+                    <div className="group text-center p-6 bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-3xl font-bold text-indigo-600 mb-3 group-hover:scale-110 transition-transform duration-300">GUJ</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors duration-300">
+                          Government of Gujarat
+                        </p>
                       </div>
+                    </div>
 
-                      {/* Karnataka Government */}
-                      <div className="group text-center p-6 bg-white border-2 border-teal-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-teal-600 mb-3 group-hover:scale-110 transition-transform duration-300">KAT</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-teal-700 transition-colors duration-300">
-                            Government of Karnataka
-                          </p>
-                        </div>
+                    {/* Karnataka Government */}
+                    <div className="group text-center p-6 bg-white border-2 border-teal-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-3xl font-bold text-teal-600 mb-3 group-hover:scale-110 transition-transform duration-300">KAT</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-teal-700 transition-colors duration-300">
+                          Government of Karnataka
+                        </p>
                       </div>
                     </div>
 
                     {/* Duplicate set for seamless loop */}
-                    <div className="flex space-x-8 flex-shrink-0" style={{ width: 'calc(100% - 1rem)' }}>
-                      {/* AICTE */}
-                      <div className="group text-center p-6 bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">AICTE</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300">
-                            All India Council for Technical Education
-                          </p>
-                        </div>
+                    {/* AICTE */}
+                    <div className="group text-center p-6 bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">AICTE</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300">
+                          All India Council for Technical Education
+                        </p>
                       </div>
+                    </div>
 
-                      {/* NSDC */}
-                      <div className="group text-center p-6 bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-green-600 mb-3 group-hover:scale-110 transition-transform duration-300">NSDC</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-green-700 transition-colors duration-300">
-                            National Skill Development Corporation
-                          </p>
-                        </div>
+                    {/* NSDC */}
+                    <div className="group text-center p-6 bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-green-600 mb-3 group-hover:scale-110 transition-transform duration-300">NSDC</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-green-700 transition-colors duration-300">
+                          National Skill Development Corporation
+                        </p>
                       </div>
+                    </div>
 
-                      {/* BOAT */}
-                      <div className="group text-center p-6 bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-purple-600 mb-3 group-hover:scale-110 transition-transform duration-300">BOAT</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-purple-700 transition-colors duration-300">
-                            Board of Apprenticeship Training
-                          </p>
-                        </div>
+                    {/* BOAT */}
+                    <div className="group text-center p-6 bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-purple-600 mb-3 group-hover:scale-110 transition-transform duration-300">BOAT</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-purple-700 transition-colors duration-300">
+                          Board of Apprenticeship Training
+                        </p>
                       </div>
+                    </div>
 
-                      {/* SSCs */}
-                      <div className="group text-center p-6 bg-white border-2 border-orange-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-4xl font-bold text-orange-600 mb-3 group-hover:scale-110 transition-transform duration-300">SSCs</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-orange-700 transition-colors duration-300">
-                            Sector Skill Councils
-                          </p>
-                        </div>
+                    {/* SSCs */}
+                    <div className="group text-center p-6 bg-white border-2 border-orange-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-orange-600 mb-3 group-hover:scale-110 transition-transform duration-300">SSCs</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-orange-700 transition-colors duration-300">
+                          Sector Skill Councils
+                        </p>
                       </div>
+                    </div>
 
-                      {/* Maharashtra Government */}
-                      <div className="group text-center p-6 bg-white border-2 border-red-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-2xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform duration-300">Maharashtra</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-red-700 transition-colors duration-300">
-                            Government of Maharashtra
-                          </p>
-                        </div>
+                    {/* Maharashtra Government */}
+                    <div className="group text-center p-6 bg-white border-2 border-red-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-3xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform duration-300">Maharashtra</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-red-700 transition-colors duration-300">
+                          Government of Maharashtra
+                        </p>
                       </div>
+                    </div>
 
-                      {/* Gujarat Government */}
-                      <div className="group text-center p-6 bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-2xl font-bold text-indigo-600 mb-3 group-hover:scale-110 transition-transform duration-300">Gujarat</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors duration-300">
-                            Government of Gujarat
-                          </p>
-                        </div>
+                    {/* Gujarat Government */}
+                    <div className="group text-center p-6 bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-3xl font-bold text-indigo-600 mb-3 group-hover:scale-110 transition-transform duration-300">Gujarat</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors duration-300">
+                          Government of Gujarat
+                        </p>
                       </div>
+                    </div>
 
-                      {/* Karnataka Government */}
-                      <div className="group text-center p-6 bg-white border-2 border-teal-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0" style={{ width: '250px' }}>
-                        <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="relative z-10">
-                          <div className="text-2xl font-bold text-teal-600 mb-3 group-hover:scale-110 transition-transform duration-300">Karnataka</div>
-                          <p className="text-gray-700 text-sm font-medium group-hover:text-teal-700 transition-colors duration-300">
-                            Government of Karnataka
-                          </p>
-                        </div>
+                    {/* Karnataka Government */}
+                    <div className="group text-center p-6 bg-white border-2 border-teal-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
+                      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative z-10">
+                        <div className="text-3xl font-bold text-teal-600 mb-3 group-hover:scale-110 transition-transform duration-300">Karnataka</div>
+                        <p className="text-gray-700 text-sm font-medium group-hover:text-teal-700 transition-colors duration-300">
+                          Government of Karnataka
+                        </p>
                       </div>
                     </div>
                   </div>
