@@ -213,7 +213,7 @@ const EEDPDetails = () => {
       </section>
 
       {/* COURSE DETAILS SECTION */}
-      <section className="bg-[#FFF1E4] py-12">
+      <section className="bg-[#f8f6f3] py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="inline-block bg-white text-orange-500 text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
