@@ -46,6 +46,24 @@
   }
 }
 
+/* Auto-scroll animation for recognized section */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 40s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
+
 @keyframes fade-in-up {
   0% {
     opacity: 0;

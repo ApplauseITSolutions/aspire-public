@@ -369,7 +369,7 @@ export const galleryData = {
   'Books': [
     { id: 1, src: mb1, alt: 'Motivational Book release UTKARSHAGATHA' }
   ],
-  'News Paper Articles': [
+  'Press and Media': [
     { id: 1, src: np1, alt: 'Award News In Paper' },
     { id: 2, src: np2, alt: 'News in Paper' },
     { id: 3, src: np3, alt: 'News paper' },
