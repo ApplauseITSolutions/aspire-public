@@ -120,7 +120,7 @@ const Hero = () => {
             Aspire Knowledge &amp; Skills India Pvt. Ltd
           </h1>
           <p className="text-body text-justify text-[#3D1717] leading-relaxed mb-6 sm:mb-7 max-w-xl mx-auto lg:mx-0 opacity-80 text-sm sm:text-base lg:text-l">
-           Aspire Knowledge and Skills India Pvt. Ltd. commonly known as ASPIRE represent network of the industry and this journey of networking started with the networking company Jetking since 1997. We are a prestigious AICTE partner, NSDC funded and BOAT partner and hold affiliations across more than seven distinct sector skill councils.
+           Aspire Knowledge and Skills India Pvt. Ltd. commonly known as ASPIRE represent network of the industry and this journey of networking started with the networking company Jetking since 1997. We are a prestigious <span className="font-bold text-[#EF7F2C]">AICTE</span> partner, <span className="font-bold text-[#EF7F2C]">NSDC</span> funded and <span className="font-bold text-[#EF7F2C]">BOAT</span> partner and hold affiliations across more than seven distinct sector skill councils.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
