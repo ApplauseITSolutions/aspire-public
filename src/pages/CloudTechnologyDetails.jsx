@@ -109,7 +109,7 @@ const CloudTechnologyDetails = () => {
       </section>
 
       {/* CAREER PATHS SECTION */}
-      <section className="bg-[#FFF1E4] py-16">
+      <section className="bg-[#FFF1E4] py-8">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#3D1717] mb-4">
@@ -202,7 +202,7 @@ const CloudTechnologyDetails = () => {
       </section>
 
       {/* KEY FEATURES SECTION */}
-      <section className="bg-[#f8f6f3] py-16">
+      <section className="bg-[#f8f6f3] py-8">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#3D1717] mb-4">
