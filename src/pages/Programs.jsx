@@ -929,6 +929,528 @@ const Programs = () => {
                   </button>
                 </div>
               </div>
+
+              {/* Financial Modelling */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={advancedBusinessIntelligenceImg}
+                    alt="Financial Modelling"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Financial Modelling
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Master financial modeling techniques for business valuation and forecasting...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Research Analyst Certification */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={creditLinkedImg}
+                    alt="Research Analyst Certification"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Research Analyst Certification
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Become a certified research analyst with comprehensive market research training...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Certificate in Financial Reporting */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={aedpImg}
+                    alt="Certificate in Financial Reporting"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Certificate in Financial Reporting
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Learn financial reporting standards and practices for accurate business reporting...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Certificate in Performance Management */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={campusToCorporateImg}
+                    alt="Certificate in Performance Management"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Certificate in Performance Management
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Master performance management systems and organizational effectiveness strategies...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Certificate in Audit */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={cyberSecurityImg}
+                    alt="Certificate in Audit"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Certificate in Audit
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Comprehensive audit training covering internal controls and compliance procedures...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Certificate in Portfolio Management */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={guaranteedInternshipImg}
+                    alt="Certificate in Portfolio Management"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Certificate in Portfolio Management
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Learn portfolio management strategies and investment optimization techniques...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Fundamentals of Financial Services */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={eedpImg}
+                    alt="Fundamentals of Financial Services"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Fundamentals of Financial Services
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Understand the fundamentals of financial services industry and operations...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Alternative Investments */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={quantumComputingImg}
+                    alt="Alternative Investments"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Alternative Investments
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Explore alternative investment strategies including hedge funds and private equity...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Certificate in Financial Markets */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={advancedBusinessIntelligenceImg}
+                    alt="Certificate in Financial Markets"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Certificate in Financial Markets
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Comprehensive understanding of financial markets structure and operations...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Technical Analysis */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={creditLinkedImg}
+                    alt="Technical Analysis"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Technical Analysis
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Master technical analysis tools and chart patterns for trading decisions...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Stock Market Analytics using Excel and PowerBI */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={uiuxDeveloperImg}
+                    alt="Stock Market Analytics using Excel and PowerBI"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Stock Market Analytics using Excel and PowerBI
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Analyze stock market data using Excel and PowerBI for informed investment...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Machine Learning for Finance */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={cloudTechnologyImg}
+                    alt="Machine Learning for Finance"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Machine Learning for Finance
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Apply machine learning algorithms to financial data analysis and prediction...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Digital Marketing Basics */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={campusToCorporateImg}
+                    alt="Digital Marketing Basics"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Digital Marketing Basics
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Learn the fundamentals of digital marketing strategies and online promotion...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* SEO and Google Ads */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={aedpImg}
+                    alt="SEO and Google Ads"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      SEO and Google Ads
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Master search engine optimization and Google Ads for effective online marketing...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Social Media Marketing */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={guaranteedInternshipImg}
+                    alt="Social Media Marketing"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Social Media Marketing
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Learn social media marketing strategies across platforms for brand growth...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* English - Competitive Exams */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={eedpImg}
+                    alt="English - Competitive Exams"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      English - Competitive Exams
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Comprehensive English preparation for competitive examinations and assessments...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Math - Competitive Exams */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={quantumComputingImg}
+                    alt="Math - Competitive Exams"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Math - Competitive Exams
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Master mathematical concepts and problem-solving for competitive exams...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
+
+              {/* Logic - Competitive Exams */}
+              <div
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                style={{ width: '412.6px', height: '298.96px' }}
+              >
+                {/* Top - Image */}
+                <div className="w-full" style={{ width: '415px', height: '128px' }}>
+                  <img
+                    src={cyberSecurityImg}
+                    alt="Logic - Competitive Exams"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                {/* Bottom - Text Content */}
+                <div className="p-4 flex flex-col justify-between" style={{ height: '170.96px' }}>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#3b2a1a] mb-2">
+                      Logic - Competitive Exams
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      30 Hours | 1 Credit NSDC. Develop logical reasoning and analytical thinking skills for competitive exams...
+                    </p>
+                  </div>
+                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                    View Details →
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
       </section>
