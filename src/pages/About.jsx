@@ -223,9 +223,8 @@ const About = () => {
               {/* RECOGNIZED & AFFILIATED WITH SECTION */}
               <div className="mt-12">
                 <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-8">
-                  Recognized & Affiliated With
+                 Our Affiliation & Recognizations
                 </h2>
-
                 {/* Auto-scrolling container */}
                 <div className="overflow-hidden relative bg-gray-50 py-4 rounded-xl">
                   <div className="flex animate-scroll gap-8" style={{ width: 'max-content' }}>
