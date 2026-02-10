@@ -751,7 +751,63 @@ const About = () => {
         </section>
       )}
 
+      {/* PROVEN IMPACT & REACH SECTION - FULL WIDTH */}
+      {activeTab === "profile" && (
+        <section className="bg-[#f5f5f5] w-full py-12">
+          <div className="max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_497px] gap-8 lg:gap-12 items-start">
+              {/* Left Content */}
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold text-[#3D1717] mb-3">
+                  Proven Impact & Reach
+                </h2>
 
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • More than 200+ academic MOUs with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Conducted technical skills and career pathway workshops for 500K+ students
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Empowered over 100K+ students through vocational and advanced skills training
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Facilitated 50K+ placements by connecting industry with academia
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Currently providing futuristic training to 10K+ students across 100+ colleges spread across Maharashtra, Karnataka and Orissa
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  • Establishment of Electronics Science Skill Lab for 10K+ students to provide hands on training in Electronic Equipment Maintenance Skills
+                </p>
+
+                {/* <p className="text-gray-800 font-dm-sans font-bold mt-3" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  Our Pedagogy:
+                </p>
+
+                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
+                  We are a "New-Age GPS" for every student, helping them navigate their unique paths to success. Our commitment is to provide unwavering support throughout their academic and career journeys until their dreams are realized.
+                </p> */}
+              </div>
+
+              {/* Right Image */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src={mrAbhayJereImg}
+                  alt="Mr. Abhay Jere"
+                  className="rounded-lg shadow-lg"
+                  style={{ width: '497px', height: '290px', objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* RECOGNITION & ACHIEVEMENTS SECTION - Subtle Design */}
       {activeTab === "founder" && (
@@ -820,7 +876,7 @@ const About = () => {
                 Our Leadership
               </span>
               <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
-                Advisory Board
+                Industry Advisory Board
               </h2>
               <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
                 Distinguished industry leaders and experts who guide our strategic vision and ensure 
@@ -999,53 +1055,9 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Milind Kamble */}
-              <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                      <img
-                        src={milindKambleImg}
-                        alt="Milind Kamble"
-                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                      Milind Kamble
-                    </h3>
-                    <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">Chairman of the Dalit Indian</p>
-                      <p className="text-xs text-orange-600 font-medium">Chamber of Commerce and Industry (DICCI)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          
 
-              {/* Sachin Itkar */}
-              <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                      <img
-                        src={sachinItkarImg}
-                        alt="Sachin Itkar"
-                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                      Sachin Itkar
-                    </h3>
-                    <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">Vice President</p>
-                      <p className="text-xs text-orange-600 font-medium">Maharashtra Economic Development Council</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
 
             </div>
 
