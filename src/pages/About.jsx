@@ -424,16 +424,6 @@ const About = () => {
                   </p>
                 </div>
               </div>
-
-              {/* Aspire Triangle - Full Width Edge to Edge */}
-              <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-12 mb-8">
-                <img
-                  src={aspireTriangleImg}
-                  alt="Aspire Triangle"
-                  className="w-full h-auto"
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
             </div>
           )}
 
