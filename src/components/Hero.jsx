@@ -2,6 +2,7 @@ import bannerImg from "../assets/images/AKANKSHANAVYAYUGACHI.jfif";
 import universityImg from "../assets/images/university.png";
 
 // Import Hero section banners
+import aspireTriangleImg from "../assets/images/aspire traingle.png";
 import eedpImg from "../assets/images/Hero section-aspire/EEDP.png";
 import cyberSecurityImg from "../assets/images/Hero section-aspire/Cyber Security.png";
 import cloudTechnologyImg from "../assets/images/Hero section-aspire/Cloud Technology.png";
@@ -24,7 +25,16 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const slides = [
-    // Programs with detail pages first
+    // Aspire Triangle - First slide
+    {
+      image: aspireTriangleImg,
+      badge: "Aspire Triangle",
+      title: "Aspire Triangle",
+      description: "Aspire Knowledge & Skills India Pvt. Ltd. represents a network of industry partnerships, bridging the gap between academic learning and professional excellence through comprehensive skill development programs.",
+      buttonText: "Explore Programs",
+      link: "/programs"
+    },
+    // Programs with detail pages
     {
       image: guaranteedInternshipImg,
       badge: "Guaranteed Internship",
@@ -167,27 +177,32 @@ const Hero = () => {
                     />
                   </div>
 
-                  {/* BADGE */}
-                  <div className={`absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 transition-opacity duration-500 ${activeSlide === index ? 'opacity-0' : 'opacity-100'}`}>
-                    <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200 pointer-events-none">
-                      {slide.badge.split(' ')[0]} <span className="hidden sm:inline">{slide.badge.split(' ').slice(1).join(' ')}</span>
-                    </button>
-                  </div>
-
-                  {/* INFO HINT - Mobile only */}
-                  <div className={`absolute top-3 right-3 z-10 transition-opacity duration-500 ${activeSlide === index ? 'opacity-0' : 'opacity-100'}`}>
-                    <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full shadow-md flex items-center gap-1 animate-pulse">
-                      <svg className="w-3 h-3 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-[10px] font-medium text-[#3D1717]">See details</span>
+                  {/* BADGE - Hidden for first slide */}
+                  {index !== 0 && (
+                    <div className={`absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 transition-opacity duration-500 ${activeSlide === index ? 'opacity-0' : 'opacity-100'}`}>
+                      <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200 pointer-events-none">
+                        {slide.badge.split(' ')[0]} <span className="hidden sm:inline">{slide.badge.split(' ').slice(1).join(' ')}</span>
+                      </button>
                     </div>
-                  </div>
+                  )}
 
-                  {/* TOUCH OVERLAY */}
-                  <div className={`absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 
-                                  transition-all duration-500 transform backdrop-blur-sm
-                                  ${activeSlide === index ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                  {/* INFO HINT - Mobile only - Hidden for first slide */}
+                  {index !== 0 && (
+                    <div className={`absolute top-3 right-3 z-10 transition-opacity duration-500 ${activeSlide === index ? 'opacity-0' : 'opacity-100'}`}>
+                      <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full shadow-md flex items-center gap-1 animate-pulse">
+                        <svg className="w-3 h-3 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-[10px] font-medium text-[#3D1717]">See details</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* TOUCH OVERLAY - Hidden for first slide */}
+                  {index !== 0 && (
+                    <div className={`absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 
+                                    transition-all duration-500 transform backdrop-blur-sm
+                                    ${activeSlide === index ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
                     <span className="inline-block bg-gradient-to-r from-orange-100 to-orange-50 text-[#EF7F2C] text-xs px-3 py-1 rounded-full mb-2 font-semibold">
                       {slide.title}
                     </span>
@@ -200,6 +215,7 @@ const Hero = () => {
                       {slide.buttonText} →
                     </button>
                   </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -207,52 +223,58 @@ const Hero = () => {
 
           {/* DESKTOP SINGLE IMAGE */}
           <div className="hidden lg:block relative group w-full max-w-md sm:max-w-lg lg:max-w-[510px]">
-            <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 max-w-[480px] rounded-2xl shadow-xl overflow-hidden mx-auto group-hover:shadow-2xl transition-all duration-500 active:shadow-2xl">
+            <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 max-w-[488px] rounded-2xl shadow-xl overflow-hidden mx-auto group-hover:shadow-2xl transition-all duration-500 active:shadow-2xl">
               <img
                 src={currentSlideData.image}
                 alt={`Aspire Banner ${currentSlide + 1}`}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 active:scale-110"
+                className={`w-full h-full object-cover transition-transform duration-700 ${currentSlide !== 0 ? 'group-hover:scale-110 active:scale-110' : ''}`}
               />
             </div>
 
-            {/* DEFAULT BADGE (VISIBLE BY DEFAULT, HIDDEN ON HOVER/TOUCH) */}
-            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 group-hover:opacity-0 group-active:opacity-0 transition-opacity duration-500 pointer-events-none">
-              <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200">
-                {currentSlideData.badge.split(' ')[0]} <span className="hidden sm:inline">{currentSlideData.badge.split(' ').slice(1).join(' ')}</span>
-              </button>
-            </div>
-
-            {/* INFO HINT - Desktop only */}
-            <div className="absolute top-3 right-3 z-10 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
-              <div className="bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5 animate-pulse">
-                <svg className="w-4 h-4 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                </svg>
-                <span className="text-xs font-medium text-[#3D1717]">See details</span>
+            {/* DEFAULT BADGE (VISIBLE BY DEFAULT, HIDDEN ON HOVER/TOUCH) - Hidden for first slide */}
+            {currentSlide !== 0 && (
+              <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 z-10 group-hover:opacity-0 group-active:opacity-0 transition-opacity duration-500 pointer-events-none">
+                <button className="flex items-center gap-1 sm:gap-2 bg-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg text-xs sm:text-sm font-semibold border border-orange-200">
+                  {currentSlideData.badge.split(' ')[0]} <span className="hidden sm:inline">{currentSlideData.badge.split(' ').slice(1).join(' ')}</span>
+                </button>
               </div>
-            </div>
+            )}
 
-            {/* OVERLAY - Shows on hover (desktop) and touch (mobile) */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 xl:p-6 
-                            opacity-0 group-hover:opacity-100 group-active:opacity-100
-                            transition-all duration-500 transform scale-95 group-hover:scale-100 group-active:scale-100
-                            pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto backdrop-blur-sm">
+            {/* INFO HINT - Desktop only - Hidden for first slide */}
+            {currentSlide !== 0 && (
+              <div className="absolute top-3 right-3 z-10 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
+                <div className="bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5 animate-pulse">
+                  <svg className="w-4 h-4 text-[#EF7F2C]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-xs font-medium text-[#3D1717]">See details</span>
+                </div>
+              </div>
+            )}
 
-              <span className="inline-block bg-gradient-to-r from-orange-100 to-orange-50 text-[#EF7F2C] text-xs px-3 py-1 rounded-full mb-3 font-semibold">
-                {currentSlideData.title}
-              </span>
+            {/* OVERLAY - Shows on hover (desktop) and touch (mobile) - Hidden for first slide */}
+            {currentSlide !== 0 && (
+              <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-orange-50/95 rounded-2xl p-4 xl:p-6 
+                              opacity-0 group-hover:opacity-100 group-active:opacity-100
+                              transition-all duration-500 transform scale-95 group-hover:scale-100 group-active:scale-100
+                              pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto backdrop-blur-sm">
 
-              <p className="text-sm text-[#3D1717] mb-4 leading-relaxed opacity-80">
-                {currentSlideData.description}
-              </p>
+                <span className="inline-block bg-gradient-to-r from-orange-100 to-orange-50 text-[#EF7F2C] text-xs px-3 py-1 rounded-full mb-3 font-semibold">
+                  {currentSlideData.title}
+                </span>
 
-              <button 
-                onClick={() => navigate(currentSlideData.link)}
-                className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-4 xl:px-5 py-2 rounded-xl text-sm font-semibold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg">
-                {currentSlideData.buttonText}
-                <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
-              </button>
-            </div>
+                <p className="text-sm text-[#3D1717] mb-4 leading-relaxed opacity-80">
+                  {currentSlideData.description}
+                </p>
+
+                <button 
+                  onClick={() => navigate(currentSlideData.link)}
+                  className="group bg-gradient-to-r from-[#EF7F2C] to-[#d6691f] text-white px-4 xl:px-5 py-2 rounded-xl text-sm font-semibold hover:from-[#d6691f] hover:to-[#c55a1a] transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  {currentSlideData.buttonText}
+                  <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </button>
+              </div>
+            )}
 
             {/* SLIDE INDICATORS */}
             {/* <div className="absolute bottom-3 left-3 flex gap-2 z-10">
