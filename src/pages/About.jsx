@@ -25,6 +25,7 @@ import pradeepJaswaniImg from "../assets/images/advisory board/Mr. Pradeep Jaswa
 import pravinMohiteImg from "../assets/images/advisory board/Mr. Pravin Mohite.png";
 import shiviKaliaImg from "../assets/images/advisory board/Ms. Shivi Kalia.png";
 import sushmaBhayaniImg from "../assets/images/advisory board/Ms. Sushma Bhayani.png";
+import girishKhilariImg from "../assets/images/advisory board/Girish_khilari.jpg";
 
 // Import organizational network resources images
 import vivekVelankarImg from "../assets/images/advisory board/Vivek Velankar.png";
@@ -35,6 +36,8 @@ import milindKambleImg from "../assets/images/advisory board/Milind Kamble.png";
 import manojJoshiImg from "../assets/images/advisory board/Manoj Joshi.png";
 import deepakShikarpurImg from "../assets/images/advisory board/Deepak Shikarpur.png";
 import bhikuRamjiIdateImg from "../assets/images/advisory board/Bhiku Ramji Idate.png";
+import rajivMitraImg from "../assets/images/advisory board/Rajiv-Mitra-1.jpg.jpeg";
+import aniruddhaShahapureImg from "../assets/images/advisory board/Aniruddha-Shahapure.jpg.jpeg";
 
 // Import academic advisory board images
 import mukulSutaoneImg from "../assets/images/Academic Advisory Board/Mukul Sutaone.png";
@@ -1103,6 +1106,38 @@ const About = () => {
                 </div>
               </div>
 
+              {/* Mr. Girish Khilari */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={girishKhilariImg}
+                        alt="Mr. Girish Khilari"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Girish Khilari
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">MD & CTO</p>
+                      <p className="text-xs text-gray-600 mb-1">Elliot Systems</p>
+                      <a 
+                        href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
           
 
            
@@ -1460,6 +1495,52 @@ const About = () => {
                         >
                           LinkedIn Profile
                         </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Rajiv Mitra */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                        <img
+                          src={rajivMitraImg}
+                          alt="Mr. Rajiv Mitra"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Rajiv Mitra
+                      </h3>
+                      <div className="min-h-[36px] flex items-center justify-center">
+                        <p className="text-xs text-orange-600 font-medium">Network Resource</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Aniruddha Shahapure */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                        <img
+                          src={aniruddhaShahapureImg}
+                          alt="Mr. Aniruddha Shahapure"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Aniruddha Shahapure
+                      </h3>
+                      <div className="min-h-[36px] flex items-center justify-center">
+                        <p className="text-xs text-orange-600 font-medium">Network Resource</p>
                       </div>
                     </div>
                   </div>
