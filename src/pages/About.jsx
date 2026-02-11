@@ -1538,8 +1538,16 @@ const About = () => {
                     <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
                       Mr. Amit Gandhi
                     </h3>
-                    <div className="min-h-[36px] flex items-center justify-center">
-                      <p className="text-xs text-orange-600 font-medium">Partnering Engagement</p>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Partnering Engagement</p>
+                      <a 
+                        href="https://www.linkedin.com/in/dr-sanjay-gandhi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
