@@ -929,7 +929,15 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Former Head BHR, Tech</p>
-                      <p className="text-xs text-orange-600 font-medium">Mahindra</p>
+                      <p className="text-xs text-gray-600 mb-1">Mahindra</p>
+                      <a 
+                        href="https://www.linkedin.com/in/shivi-kalia-7686881/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
