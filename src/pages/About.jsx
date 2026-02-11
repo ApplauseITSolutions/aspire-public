@@ -961,7 +961,15 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CEO Olive Data Centre Pvt.</p>
-                      <p className="text-xs text-orange-600 font-medium">Based in California</p>
+                      <p className="text-xs text-gray-600 mb-1">Based in California</p>
+                      <a 
+                        href="https://www.linkedin.com/in/pravinpmohite?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -985,7 +993,15 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">VP & Vertical Head IoT</p>
-                      <p className="text-xs text-orange-600 font-medium">Reliance Jio</p>
+                      <p className="text-xs text-gray-600 mb-1">Reliance Jio</p>
+                      <a 
+                        href="https://www.linkedin.com/in/rajumohan/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1009,7 +1025,15 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Director General COAI</p>
-                      <p className="text-xs text-orange-600 font-medium">Cellular Operators Association</p>
+                      <p className="text-xs text-gray-600 mb-1">Cellular Operators Association</p>
+                      <a 
+                        href="https://www.linkedin.com/in/spkochhar/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1033,7 +1057,15 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Former Senior Solution</p>
-                      <p className="text-xs text-orange-600 font-medium">Manager, IBM</p>
+                      <p className="text-xs text-gray-600 mb-1">Manager, IBM</p>
+                      <a 
+                        href="https://www.linkedin.com/in/sushma-bhayani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1057,7 +1089,15 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CEO JP Research India</p>
-                      <p className="text-xs text-orange-600 font-medium">Pvt. Ltd. (USA Based)</p>
+                      <p className="text-xs text-gray-600 mb-1">Pvt. Ltd. (USA Based)</p>
+                      <a 
+                        href="https://www.linkedin.com/in/sushma-bhayani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1245,7 +1285,15 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Chairman of the Dalit Indian</p>
-                        <p className="text-xs text-orange-600 font-medium">Chamber of Commerce and Industry (DICCI)</p>
+                        <p className="text-xs text-gray-600 mb-1">Chamber of Commerce and Industry (DICCI)</p>
+                        <a 
+                          href="https://www.linkedin.com/in/milind-kamble-686814278/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                        >
+                          LinkedIn Profile
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1269,7 +1317,15 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Director Kinetic Engineering</p>
-                        <p className="text-xs text-orange-600 font-medium">Member AICTE Board</p>
+                        <p className="text-xs text-gray-600 mb-1">Member AICTE Board</p>
+                        <a 
+                          href="https://www.linkedin.com/in/deepak-shikarpur-5b047b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                        >
+                          LinkedIn Profile
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1314,8 +1370,16 @@ const About = () => {
                       <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
                         Mr. Sachin Itkar
                       </h3>
-                      <div className="min-h-[36px] flex items-center justify-center">
-                        <p className="text-xs text-orange-600 font-medium">Vice President, Maharashtra Economic Development Council</p>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">Vice President, Maharashtra Economic Development Council</p>
+                        <a 
+                          href="https://www.linkedin.com/in/sachinitkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                        >
+                          LinkedIn Profile
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1387,7 +1451,15 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Founder and Managing</p>
-                        <p className="text-xs text-orange-600 font-medium">Editor India CSR Network</p>
+                        <p className="text-xs text-gray-600 mb-1">Editor India CSR Network</p>
+                        <a 
+                          href="https://www.linkedin.com/in/rusen-kumar-2a514629b/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
+                        >
+                          LinkedIn Profile
+                        </a>
                       </div>
                     </div>
                   </div>
