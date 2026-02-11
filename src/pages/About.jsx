@@ -519,7 +519,7 @@ const About = () => {
                     </div>
                     <div>
                       <div className="font-bold text-gray-900 group-hover:text-[#EF7F2C] transition-colors duration-300">Vice President</div>
-                      <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">PMA Association</div>
+                      <div className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Governing Council</div>
                     </div>
                   </div>
 
