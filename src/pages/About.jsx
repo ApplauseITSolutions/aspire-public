@@ -86,7 +86,7 @@ const About = () => {
     { id: "profile", label: "About Aspire", active: true },
     { id: "vision", label: "Vision & Mission", active: false },
     { id: "founder", label: "Founder's Message", active: false },
-    { id: "advisors", label: "Advisors", active: false },
+    { id: "advisors", label: "Advisory Councils", active: false },
     { id: "team", label: "Team Members", active: false }
   ];
 
