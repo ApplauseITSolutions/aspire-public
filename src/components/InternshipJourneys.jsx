@@ -93,7 +93,7 @@ const InternshipJourneys = () => {
                                             <video
                                                 controls
                                                 autoPlay
-                                                className="w-full h-[180px] object-cover"
+                                                className="w-full h-[180px] object-contain bg-black"
                                                 onEnded={() => setPlayingVideo(null)}
                                                 onError={(e) => console.error('Video error:', e)}
                                             >
@@ -103,7 +103,7 @@ const InternshipJourneys = () => {
                                         ) : (
                                             <>
                                                 <video
-                                                    className="w-full h-[180px] object-cover"
+                                                    className="w-full h-[180px] object-contain bg-black"
                                                     preload="metadata"
                                                     muted
                                                 >
