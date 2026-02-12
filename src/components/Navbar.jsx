@@ -16,7 +16,7 @@ const Navbar = () => {
     { id: "profile", label: "About Aspire" },
     { id: "vision", label: "Vision & Mission" },
     { id: "founder", label: "Founder's Message" },
-    { id: "advisors", label: "Advisors" },
+    { id: "advisors", label: "Advisory Councils" },
     { id: "team", label: "Team Members" }
   ];
 
