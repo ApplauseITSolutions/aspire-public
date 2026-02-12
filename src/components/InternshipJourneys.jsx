@@ -2,17 +2,18 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import { useState } from "react";
 
 // Import videos
-import ashishVideo from "../assets/videos/Ashish Kavishkar Intern.mp4";
+import shivaniVideo from "../assets/videos/shivani prakash shinde.mp4";
 import asmitaVideo from "../assets/videos/Asmita Intern.mp4";
 import balajiVideo from "../assets/videos/Balaji Karpe Intern.mp4";
 import siddharthVideo from "../assets/videos/Siddharth Intern.mp4";
 import yashVideo from "../assets/videos/Yash Sahasrabudhe Intern.mp4";
+import unknownVideo from "../assets/videos/unknown.mp4";
 
 const journeys = [
     {
         tag: "Journey",
-        title: "Ashish Kavishkar - Internship Journey",
-        video: ashishVideo,
+        title: "Shivani Prakash Shinde - Internship Journey",
+        video: shivaniVideo,
     },
     {
         tag: "Success",
@@ -90,18 +91,24 @@ const InternshipJourneys = () => {
                                     <div className="relative">
                                         {playingVideo === index ? (
                                             <video
-                                                src={item.video}
                                                 controls
                                                 autoPlay
                                                 className="w-full h-[180px] object-cover"
                                                 onEnded={() => setPlayingVideo(null)}
-                                            />
+                                                onError={(e) => console.error('Video error:', e)}
+                                            >
+                                                <source src={item.video} type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
                                         ) : (
                                             <>
                                                 <video
-                                                    src={item.video}
                                                     className="w-full h-[180px] object-cover"
-                                                />
+                                                    preload="metadata"
+                                                    muted
+                                                >
+                                                    <source src={item.video} type="video/mp4" />
+                                                </video>
 
                                                 {/* PLAY BUTTON */}
                                                 <div 
