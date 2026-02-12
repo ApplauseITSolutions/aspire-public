@@ -1512,8 +1512,9 @@ const About = () => {
                       <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
                         Mr. Rajiv Mitra
                       </h3>
-                      <div className="min-h-[36px] flex items-center justify-center">
-                        <p className="text-xs text-orange-600 font-medium">Network Resource</p>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">CEO</p>
+                        <p className="text-xs text-orange-600">Dairy and Food Industry,Scaling Growth, Sustainability Innovation</p>
                       </div>
                     </div>
                   </div>
@@ -1533,10 +1534,11 @@ const About = () => {
                     </div>
                     <div className="p-4 text-center flex-1 flex flex-col justify-center">
                       <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Aniruddha Shahapure
+                        Mr. Aniruddh Vaidya Shahapure
                       </h3>
-                      <div className="min-h-[36px] flex items-center justify-center">
-                        <p className="text-xs text-orange-600 font-medium">Network Resource</p>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">Global Leader</p>
+                        <p className="text-xs text-orange-600">Digital Transformation Expert, ESG & Renewable Energy</p>
                       </div>
                     </div>
                   </div>
