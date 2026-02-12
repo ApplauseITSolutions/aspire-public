@@ -1,0 +1,188 @@
+              {/* RECOGNIZED & AFFILIATED WITH SECTION */}
+              <div className="mt-12">
+                <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-8">
+                  Our Affiliations & Recognitions
+                </h2>
+                {/* Auto-scrolling logos container */}
+                <div className="overflow-hidden relative bg-gray-50 py-6 rounded-xl">
+                  <div className="flex animate-scroll gap-8" style={{ width: 'max-content' }}>
+                    {/* First set of logos */}
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aatmanirbharImg} alt="Aatmanirbhar" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aicteImg} alt="AICTE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={bwsscImg} alt="BWSSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cgscImg} alt="CGSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cmegpImg} alt="CMEGP" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={dduImg} alt="DDU" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={digitalIndiaImg} alt="Digital India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={essiImg} alt="ESSI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={ficsiImg} alt="FICSI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={gemImg} alt="GeM" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={healthcareImg} alt="Healthcare" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={kaushalyaImg} alt="Kaushalya" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moeaitImg} alt="MOEAIT" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mordImg} alt="MORD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mosdaeImg} alt="MOSDAE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moudImg} alt="MOUD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={msmeNsicImg} alt="MSME-NSIC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mssdsImg} alt="MSSDS" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nsdcImg} alt="NSDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nulmSigaramImg} alt="NULM Sigaram Trust" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pmkvyImg} alt="PMKVY" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pvgImg} alt="PVG" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={rasciImg} alt="RASCI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={researchParkImg} alt="Research Park" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={sdcImg} alt="SDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={skillIndiaImg} alt="Skill India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={smartCityImg} alt="Smart City" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={startupIndiaImg} alt="Startup India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={tsscImg} alt="TSSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+
+                    {/* Duplicate set for seamless scrolling */}
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aatmanirbharImg} alt="Aatmanirbhar" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aicteImg} alt="AICTE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={bwsscImg} alt="BWSSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cgscImg} alt="CGSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cmegpImg} alt="CMEGP" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={dduImg} alt="DDU" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={digitalIndiaImg} alt="Digital India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={essiImg} alt="ESSI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={ficsiImg} alt="FICSI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={gemImg} alt="GeM" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={healthcareImg} alt="Healthcare" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={kaushalyaImg} alt="Kaushalya" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moeaitImg} alt="MOEAIT" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mordImg} alt="MORD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mosdaeImg} alt="MOSDAE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moudImg} alt="MOUD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={msmeNsicImg} alt="MSME-NSIC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mssdsImg} alt="MSSDS" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nsdcImg} alt="NSDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nulmSigaramImg} alt="NULM Sigaram Trust" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pmkvyImg} alt="PMKVY" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pvgImg} alt="PVG" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={rasciImg} alt="RASCI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={researchParkImg} alt="Research Park" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={sdcImg} alt="SDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={skillIndiaImg} alt="Skill India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={smartCityImg} alt="Smart City" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={startupIndiaImg} alt="Startup India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={tsscImg} alt="TSSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>

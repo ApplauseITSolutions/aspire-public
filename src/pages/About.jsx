@@ -48,6 +48,37 @@ import shailendraShuklaImg from "../assets/images/Academic Advisory Board/Shaile
 // Import team member images
 import prashantPundImg from "../assets/images/advisory board/prashant pund.jpg";
 
+// Import government agencies images
+import aatmanirbharImg from "../assets/images/government agencies/Aatmanirbhar.png";
+import aicteImg from "../assets/images/government agencies/AICTE.png";
+import bwsscImg from "../assets/images/government agencies/BWSSC.png";
+import cgscImg from "../assets/images/government agencies/cgsc.png";
+import cmegpImg from "../assets/images/government agencies/CMEGP.png";
+import dduImg from "../assets/images/government agencies/DDU.png";
+import digitalIndiaImg from "../assets/images/government agencies/digitalindia_logo.png";
+import essiImg from "../assets/images/government agencies/essi_logo.png";
+import ficsiImg from "../assets/images/government agencies/FICSI.png";
+import gemImg from "../assets/images/government agencies/GeM.png";
+import healthcareImg from "../assets/images/government agencies/healthcare.png";
+import kaushalyaImg from "../assets/images/government agencies/Kaushalya.png";
+import moeaitImg from "../assets/images/government agencies/MOEAIT.png";
+import mordImg from "../assets/images/government agencies/MORD.png";
+import mosdaeImg from "../assets/images/government agencies/MOSDAE.png";
+import moudImg from "../assets/images/government agencies/MOUD.png";
+import msmeNsicImg from "../assets/images/government agencies/MSME-NSIC.png";
+import mssdsImg from "../assets/images/government agencies/MSSDS.png";
+import nsdcImg from "../assets/images/government agencies/nsdc_logo.png";
+import nulmSigaramImg from "../assets/images/government agencies/NULM-Sigaram-Trust.png";
+import pmkvyImg from "../assets/images/government agencies/pmkvy-logo.png";
+import pvgImg from "../assets/images/government agencies/PVGLogoColour.png";
+import rasciImg from "../assets/images/government agencies/RASCI.png";
+import researchParkImg from "../assets/images/government agencies/Research Park.png";
+import sdcImg from "../assets/images/government agencies/SDC.png";
+import skillIndiaImg from "../assets/images/government agencies/skillindia_logo.png";
+import smartCityImg from "../assets/images/government agencies/Smart-City.png";
+import startupIndiaImg from "../assets/images/government agencies/startup india.png";
+import tsscImg from "../assets/images/government agencies/TSSC.png";
+
 const About = () => {
   const [searchParams] = useSearchParams();
   const [activeTab, setActiveTab] = useState("profile");
@@ -228,162 +259,185 @@ const About = () => {
                 <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-8">
                  Our Affiliations & Recognizations
                 </h2>
-                {/* Auto-scrolling container */}
-                <div className="overflow-hidden relative bg-gray-50 py-4 rounded-xl">
+                {/* Auto-scrolling logos container */}
+                <div className="overflow-hidden relative">
                   <div className="flex animate-scroll gap-8" style={{ width: 'max-content' }}>
-                    {/* AICTE */}
-                    <div className="group text-center p-6 bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">AICTE</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300">
-                          All India Council for Technical Education
-                        </p>
-                      </div>
+                    {/* Government Agencies Logos */}
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aatmanirbharImg} alt="Aatmanirbhar" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aicteImg} alt="AICTE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={bwsscImg} alt="BWSSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cgscImg} alt="CGSC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cmegpImg} alt="CMEGP" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={dduImg} alt="DDU" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={digitalIndiaImg} alt="Digital India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={essiImg} alt="ESSI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={ficsiImg} alt="FICSI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={gemImg} alt="GeM" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={healthcareImg} alt="Healthcare" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={kaushalyaImg} alt="Kaushalya" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moeaitImg} alt="MOEAIT" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mordImg} alt="MORD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mosdaeImg} alt="MOSDAE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moudImg} alt="MOUD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={msmeNsicImg} alt="MSME-NSIC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mssdsImg} alt="MSSDS" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nsdcImg} alt="NSDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nulmSigaramImg} alt="NULM Sigaram Trust" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pmkvyImg} alt="PMKVY" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pvgImg} alt="PVG" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={rasciImg} alt="RASCI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={researchParkImg} alt="Research Park" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={sdcImg} alt="SDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={skillIndiaImg} alt="Skill India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={smartCityImg} alt="Smart City" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={startupIndiaImg} alt="Startup India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={tsscImg} alt="TSSC" className="max-w-full max-h-full object-contain" />
                     </div>
 
-                    {/* NSDC */}
-                    <div className="group text-center p-6 bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-green-600 mb-3 group-hover:scale-110 transition-transform duration-300">NSDC</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-green-700 transition-colors duration-300">
-                          National Skill Development Corporation
-                        </p>
-                      </div>
+                    {/* Duplicate set for seamless scrolling - First 29 logos repeated */}
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aatmanirbharImg} alt="Aatmanirbhar" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* BOAT */}
-                    <div className="group text-center p-6 bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-purple-600 mb-3 group-hover:scale-110 transition-transform duration-300">BOAT</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-purple-700 transition-colors duration-300">
-                          Board of Apprenticeship Training
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={aicteImg} alt="AICTE" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* SSCs */}
-                    <div className="group text-center p-6 bg-white border-2 border-orange-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-orange-600 mb-3 group-hover:scale-110 transition-transform duration-300">SSCs</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-orange-700 transition-colors duration-300">
-                          Sector Skill Councils
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={bwsscImg} alt="BWSSC" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Maharashtra Government */}
-                    <div className="group text-center p-6 bg-white border-2 border-red-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-3xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform duration-300">MAH</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-red-700 transition-colors duration-300">
-                          Government of Maharashtra
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cgscImg} alt="CGSC" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Gujarat Government */}
-                    <div className="group text-center p-6 bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-3xl font-bold text-indigo-600 mb-3 group-hover:scale-110 transition-transform duration-300">GUJ</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors duration-300">
-                          Government of Gujarat
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={cmegpImg} alt="CMEGP" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Karnataka Government */}
-                    <div className="group text-center p-6 bg-white border-2 border-teal-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-3xl font-bold text-teal-600 mb-3 group-hover:scale-110 transition-transform duration-300">KAT</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-teal-700 transition-colors duration-300">
-                          Government of Karnataka
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={dduImg} alt="DDU" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Duplicate set for seamless loop */}
-                    {/* AICTE */}
-                    <div className="group text-center p-6 bg-white border-2 border-blue-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-blue-600 mb-3 group-hover:scale-110 transition-transform duration-300">AICTE</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-blue-700 transition-colors duration-300">
-                          All India Council for Technical Education
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={digitalIndiaImg} alt="Digital India" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* NSDC */}
-                    <div className="group text-center p-6 bg-white border-2 border-green-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-green-600 mb-3 group-hover:scale-110 transition-transform duration-300">NSDC</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-green-700 transition-colors duration-300">
-                          National Skill Development Corporation
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={essiImg} alt="ESSI" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* BOAT */}
-                    <div className="group text-center p-6 bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-purple-600 mb-3 group-hover:scale-110 transition-transform duration-300">BOAT</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-purple-700 transition-colors duration-300">
-                          Board of Apprenticeship Training
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={ficsiImg} alt="FICSI" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* SSCs */}
-                    <div className="group text-center p-6 bg-white border-2 border-orange-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-4xl font-bold text-orange-600 mb-3 group-hover:scale-110 transition-transform duration-300">SSCs</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-orange-700 transition-colors duration-300">
-                          Sector Skill Councils
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={gemImg} alt="GeM" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Maharashtra Government */}
-                    <div className="group text-center p-6 bg-white border-2 border-red-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-3xl font-bold text-red-600 mb-3 group-hover:scale-110 transition-transform duration-300">Maharashtra</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-red-700 transition-colors duration-300">
-                          Government of Maharashtra
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={healthcareImg} alt="Healthcare" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Gujarat Government */}
-                    <div className="group text-center p-6 bg-white border-2 border-indigo-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-3xl font-bold text-indigo-600 mb-3 group-hover:scale-110 transition-transform duration-300">Gujarat</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-indigo-700 transition-colors duration-300">
-                          Government of Gujarat
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={kaushalyaImg} alt="Kaushalya" className="max-w-full max-h-full object-contain" />
                     </div>
-
-                    {/* Karnataka Government */}
-                    <div className="group text-center p-6 bg-white border-2 border-teal-200 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer relative overflow-hidden flex-shrink-0 min-w-[250px]">
-                      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10">
-                        <div className="text-3xl font-bold text-teal-600 mb-3 group-hover:scale-110 transition-transform duration-300">Karnataka</div>
-                        <p className="text-gray-700 text-sm font-medium group-hover:text-teal-700 transition-colors duration-300">
-                          Government of Karnataka
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moeaitImg} alt="MOEAIT" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mordImg} alt="MORD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mosdaeImg} alt="MOSDAE" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={moudImg} alt="MOUD" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={msmeNsicImg} alt="MSME-NSIC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={mssdsImg} alt="MSSDS" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nsdcImg} alt="NSDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={nulmSigaramImg} alt="NULM Sigaram Trust" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pmkvyImg} alt="PMKVY" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={pvgImg} alt="PVG" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={rasciImg} alt="RASCI" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={researchParkImg} alt="Research Park" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={sdcImg} alt="SDC" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={skillIndiaImg} alt="Skill India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={smartCityImg} alt="Smart City" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={startupIndiaImg} alt="Startup India" className="max-w-full max-h-full object-contain" />
+                    </div>
+                    <div className="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm min-w-[180px] h-[100px] flex-shrink-0 hover:shadow-md transition-shadow">
+                      <img src={tsscImg} alt="TSSC" className="max-w-full max-h-full object-contain" />
                     </div>
                   </div>
                 </div>
@@ -1759,6 +1813,26 @@ const About = () => {
       )}
 
       <Footer />
+      
+      {/* CSS Animation for scrolling logos */}
+      <style>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-scroll {
+          animation: scroll 40s linear infinite;
+        }
+        
+        .animate-scroll:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </div>
   );
 };
