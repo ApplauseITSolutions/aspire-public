@@ -607,7 +607,7 @@ const About = () => {
                 {/* Header */}
                 <div>
                   <div className="inline-block bg-[#EF7F2C] text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
-                    Director
+                    Chairman & Managing Director
                   </div>
                   <h3 className="text-3xl font-bold text-[#EF7F2C] mb-4">Mrs. Samidha Gandhi</h3>
                   <p className="text-gray-700 leading-relaxed text-base">
@@ -802,64 +802,6 @@ const About = () => {
                     <p className="text-[#3D1717] font-medium">- Dr. Sanjay Gandhi</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* PROVEN IMPACT & REACH SECTION - FULL WIDTH */}
-      {activeTab === "profile" && (
-        <section className="bg-[#f5f5f5] w-full py-12">
-          <div className="max-w-[1440px] mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_497px] gap-8 lg:gap-12 items-start">
-              {/* Left Content */}
-              <div className="space-y-2">
-                <h2 className="text-2xl font-bold text-[#3D1717] mb-3">
-                  Proven Impact & Reach
-                </h2>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • More than 200+ academic MOUs with institutions like IIT BHU, IIIT, BATU, VTU, COEP, SNDT and many more.
-                </p>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Conducted technical skills and career pathway workshops for 500K+ students
-                </p>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Empowered over 100K+ students through vocational and advanced skills training
-                </p>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Facilitated 50K+ placements by connecting industry with academia
-                </p>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Currently providing futuristic training to 10K+ students across 100+ colleges spread across Maharashtra, Karnataka and Orissa
-                </p>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  • Establishment of Electronics Science Skill Lab for 10K+ students to provide hands on training in Electronic Equipment Maintenance Skills
-                </p>
-
-                {/* <p className="text-gray-800 font-dm-sans font-bold mt-3" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  Our Pedagogy:
-                </p>
-
-                <p className="text-gray-800 text-justify font-dm-sans font-normal" style={{ fontSize: '16px', lineHeight: '1.4' }}>
-                  We are a "New-Age GPS" for every student, helping them navigate their unique paths to success. Our commitment is to provide unwavering support throughout their academic and career journeys until their dreams are realized.
-                </p> */}
-              </div>
-
-              {/* Right Image */}
-              <div className="flex justify-center lg:justify-end">
-                <img
-                  src={mrAbhayJereImg}
-                  alt="Mr. Abhay Jere"
-                  className="rounded-lg shadow-lg"
-                  style={{ width: '497px', height: '290px', objectFit: 'cover' }}
-                />
               </div>
             </div>
           </div>
