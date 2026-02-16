@@ -1515,6 +1515,14 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">CEO</p>
                         <p className="text-xs text-orange-600">Dairy and Food Industry,Scaling Growth, Sustainability Innovation</p>
+                        <a 
+                          href="https://www.linkedin.com/in/rajiv-mitra-0189296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                        >
+                          LinkedIn Profile
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1539,6 +1547,14 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Global Leader</p>
                         <p className="text-xs text-orange-600">Digital Transformation Expert, ESG & Renewable Energy</p>
+                        <a 
+                          href="https://www.linkedin.com/in/aniruddhashahapure-independentdirector-esg-ai-ml-cybersecurity?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                        >
+                          LinkedIn Profile
+                        </a>
                       </div>
                     </div>
                   </div>
