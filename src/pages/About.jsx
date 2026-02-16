@@ -607,11 +607,11 @@ const About = () => {
                 {/* Header */}
                 <div>
                   <div className="inline-block bg-[#EF7F2C] text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
-                    Chairman & Managing Director
+                     Director
                   </div>
                   <h3 className="text-3xl font-bold text-[#EF7F2C] mb-4">Mrs. Samidha Gandhi</h3>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    A driving force behind the operational excellence of Aspire Knowledge & Skills, Mrs. Samidha Gandhi brings
+                    A driving force behind the operational excellence of Aspire Knowledge & Skills India Pvt. Ltd, Mrs. Samidha Gandhi brings
                     compassion and strategic insight, focusing on women empowerment and fostering an inclusive learning
                     environment for all students.
                   </p>
@@ -773,7 +773,7 @@ const About = () => {
 
                 {/* Message Section with Orange Left Border */}
                 <div className="border-l-4 border-[#EF7F2C] pl-6 space-y-4">
-                  <h4 className="text-lg font-bold text-[#3D1717]">A Message from the Director</h4>
+                  <h4 className="text-lg font-bold text-[#3D1717]">A Message from the Chairman & Managing Director</h4>
 
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
