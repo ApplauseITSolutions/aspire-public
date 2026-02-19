@@ -1090,7 +1090,7 @@ const About = () => {
                       <p className="text-xs text-gray-600 mb-1">CEO JP Research India</p>
                       <p className="text-xs text-gray-600 mb-1">Pvt. Ltd. (USA Based)</p>
                       <a 
-                        href="https://www.linkedin.com/in/sushma-bhayani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                        href="https://www.linkedin.com/in/pkjaswani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
