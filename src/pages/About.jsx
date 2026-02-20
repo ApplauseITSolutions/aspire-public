@@ -1639,7 +1639,7 @@ const About = () => {
                       <img
                         src={prashantPundImg}
                         alt="Mr. Prashant Pund"
-                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-fit rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                   </div>
@@ -1736,7 +1736,7 @@ const About = () => {
                       <img
                         src={nehaGuptaImg}
                         alt="Mrs. Neha Gupta"
-                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-fit rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                   </div>
