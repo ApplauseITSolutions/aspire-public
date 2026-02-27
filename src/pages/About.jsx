@@ -1604,33 +1604,6 @@ const About = () => {
             {/* Team Members Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               
-              {/* Mr. Bhuvanesh Kulkarni */}
-              <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                      {/* Placeholder for image */}
-                      <div className="w-full h-full bg-gray-200 rounded-2xl shadow-md flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="w-16 h-16 bg-orange-300 rounded-full mx-auto mb-2 flex items-center justify-center">
-                            <span className="text-white font-bold text-xl">BK</span>
-                          </div>
-                          <p className="text-gray-500 text-xs">Photo Coming Soon</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                      Mr. Bhuvanesh Kulkarni
-                    </h3>
-                    <div className="min-h-[36px] flex items-center justify-center">
-                      <p className="text-xs text-orange-600 font-medium">Catalyst</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               {/* Mr. Prashant Pund */}
               <div className="group">
                 <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -1714,7 +1687,7 @@ const About = () => {
                       Mr. Amit Gandhi
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">Partnering Engagement</p>
+                      <p className="text-xs text-gray-600 mb-1">Partner Engagement</p>
                       <a 
                         href="https://www.linkedin.com/in/dr-sanjay-gandhi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
                         target="_blank" 
