@@ -87,12 +87,21 @@ const Navbar = () => {
           </div>
           
           <NavLink 
-            to="/programs" 
+            to="/programs"
+            end
             className={({ isActive }) => 
               `navbar-nav-menu transition ${isActive ? 'text-[#EF7F2C]' : 'hover:text-[#EF7F2C]'}`
             }
           >
             Programs
+          </NavLink>
+          <NavLink 
+            to="/programs/campus-to-corporate"
+            className={({ isActive }) => 
+              `navbar-nav-menu transition ${isActive ? 'text-[#EF7F2C]' : 'hover:text-[#EF7F2C]'}`
+            }
+          >
+            Campus to Corporate
           </NavLink>
           <NavLink 
             to="/impact-reach" 
@@ -165,13 +174,23 @@ const Navbar = () => {
           </div>
           
           <NavLink 
-            to="/programs" 
+            to="/programs"
+            end
             className={({ isActive }) => 
               `navbar-nav-menu transition ${isActive ? 'text-[#EF7F2C]' : 'text-[#3D1717] hover:text-[#EF7F2C]'}`
             }
             onClick={() => setIsMenuOpen(false)}
           >
             Programs
+          </NavLink>
+          <NavLink 
+            to="/programs/campus-to-corporate" 
+            className={({ isActive }) => 
+              `navbar-nav-menu transition ${isActive ? 'text-[#EF7F2C]' : 'text-[#3D1717] hover:text-[#EF7F2C]'}`
+            }
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Campus to Corporate
           </NavLink>
           <NavLink 
             to="/impact-reach" 
