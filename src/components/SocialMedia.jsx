@@ -2,21 +2,21 @@ import { FaYoutube, FaFacebook } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-[#3D1717] mb-0">Social Media</h2>
           {/* <div className="w-16 h-1 bg-[#EF7F2C] mx-auto rounded-full"></div> */}
           <p className="text-gray-500 mt-0 text-sm">Stay connected with us across platforms</p>
         </div>
 
         {/* Two Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
 
           {/* YouTube Card */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div className="lg:col-span-3 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
             {/* Card Header */}
             <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100 bg-gray-50">
               <div className="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -24,7 +24,7 @@ const SocialMedia = () => {
               </div>
               <div>
                 <p className="font-semibold text-gray-800 text-sm">Aspire Knowledge & Skills</p>
-                <p className="text-xs text-gray-400">YouTube Channel</p>
+                <p className="text-xs text-gray-400">Official YouTube Channel</p>
               </div>
               <a
                 href="https://www.youtube.com/@AspireKnowledgeSkills"
@@ -49,7 +49,7 @@ const SocialMedia = () => {
           </div>
 
           {/* Facebook Card */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
             {/* Card Header */}
             <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100 bg-gray-50">
               <div className="w-9 h-9 bg-[#1877F2] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -57,7 +57,7 @@ const SocialMedia = () => {
               </div>
               <div>
                 <p className="font-semibold text-gray-800 text-sm">Aspire Knowledge & Skills</p>
-                <p className="text-xs text-gray-400">Facebook Page</p>
+                <p className="text-xs text-gray-400"> Official Facebook Page</p>
               </div>
               <a
                 href="https://www.facebook.com/Aspirekspune/"
@@ -72,9 +72,9 @@ const SocialMedia = () => {
             <div className="w-full flex justify-center items-center bg-white py-2 overflow-hidden">
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAspirekspune%2F&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"
-                width="500"
+                width="100%"
                 height="400"
-                style={{ border: 'none', overflow: 'hidden', display: 'block', margin: '0 auto' }}
+                style={{ border: 'none', overflow: 'hidden', display: 'block', margin: '0 auto', maxWidth: '500px' }}
                 scrolling="no"
                 frameBorder="0"
                 allowFullScreen

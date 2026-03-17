@@ -1563,6 +1563,258 @@ const About = () => {
               </div>
             </div>
 
+            {/* Strategic Committee Council Section */}
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                  Strategic Committee Council
+                </span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                  Strategic Committee Council
+                </h2>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                  Key members guiding the strategic direction and operations of our councils.
+                </p>
+              </div>
+
+              {/* Committee Members Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                {/* Mr. Prashant Pund */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                        <img
+                          src={prashantPundImg}
+                          alt="Mr. Prashant Pund"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Prashant Pund
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Vikrant Vartak */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Vikrant Vartak
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <a 
+                          href="https://www.linkedin.com/in/vikrant-vartak-9127321a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                        >
+                          LinkedIn Profile
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Balveer Chawla */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Balveer Chawla
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <a 
+                          href="https://www.linkedin.com/in/balvirchawla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                        >
+                          LinkedIn Profile
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Abhijeet Khurpe */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Abhijeet Khurpe
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <a 
+                          href="https://www.linkedin.com/in/abhijit-khurape-950a9440?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                        >
+                          LinkedIn Profile
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* AI Expert Committee Section */}
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                  AI Expert Committee
+                </span>
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                  AI Expert Committee
+                </h2>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                  Leading experts guiding our vision and integration of Artificial Intelligence technologies.
+                </p>
+              </div>
+
+              {/* Committee Members Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                {/* Mr. Kedar Deo */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Kedar Deo
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">CTO</p>
+                        <p className="text-xs text-orange-600 font-medium">Tech Mahindra, Accenture, Geometric</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Girish Khilari */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                        <img
+                          src={girishKhilariImg}
+                          alt="Mr. Girish Khilari"
+                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Girish Khilari
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">CTO</p>
+                        <p className="text-xs text-orange-600 font-medium">Elliot Systems</p>
+                        <a 
+                          href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                        >
+                          LinkedIn Profile
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Ravindra Pal Singh */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Ravindra Pal Singh
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">Director Software Engineering</p>
+                        <p className="text-xs text-orange-600 font-medium">Amdocs Ltd</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Mandar Halbhavi */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Mandar Halbhavi
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">Deputy General Manager</p>
+                        <p className="text-xs text-orange-600 font-medium">Jio Platforms Ltd</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mr. Manoj Deshmukh */}
+                <div className="group">
+                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                    <div className="relative overflow-hidden">
+                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                        Mr. Manoj Deshmukh
+                      </h3>
+                      <div className="min-h-[36px] flex flex-col items-center justify-center">
+                        <p className="text-xs text-gray-600 mb-1">CTO</p>
+                        <p className="text-xs text-orange-600 font-medium">iConnect Info Solutions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
             {/* Bottom Section */}
             <div className="mt-16 text-center">
               <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 border border-orange-200">
