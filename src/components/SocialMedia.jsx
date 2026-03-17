@@ -7,9 +7,9 @@ const SocialMedia = () => {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#3D1717] mb-3">Social Media</h2>
-          <div className="w-16 h-1 bg-[#EF7F2C] mx-auto rounded-full"></div>
-          <p className="text-gray-500 mt-4 text-sm">Stay connected with us across platforms</p>
+          <h2 className="text-3xl font-bold text-[#3D1717] mb-0">Social Media</h2>
+          {/* <div className="w-16 h-1 bg-[#EF7F2C] mx-auto rounded-full"></div> */}
+          <p className="text-gray-500 mt-0 text-sm">Stay connected with us across platforms</p>
         </div>
 
         {/* Two Column Grid */}
@@ -69,12 +69,12 @@ const SocialMedia = () => {
               </a>
             </div>
             {/* Embed */}
-            <div className="w-full flex justify-center bg-white py-2">
+            <div className="w-full flex justify-center items-center bg-white py-2 overflow-hidden">
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAspirekspune%2F&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"
-                width="100%"
+                width="500"
                 height="400"
-                style={{ border: 'none', overflow: 'hidden', minHeight: '400px' }}
+                style={{ border: 'none', overflow: 'hidden', display: 'block', margin: '0 auto' }}
                 scrolling="no"
                 frameBorder="0"
                 allowFullScreen

@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import AboutAspire from "../components/AboutAspire";
+import SocialMedia from "../components/SocialMedia";
 import Programs from "../components/Programs";
 import ImpactReach from "../components/ImpactReach";
 import Testimonials from "../components/Testimonials";
@@ -111,6 +112,9 @@ const Home = () => {
           <ImpactReach />
         </div>
       )}
+
+      {/* Social Media Section */}
+      <SocialMedia />
 
       {/* Testimonials Section */}
       {loadingStates.testimonials ? (
