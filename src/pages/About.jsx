@@ -84,13 +84,13 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const { isLoading, setLoading } = useLoading(true, 800);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
-    'profile', 'vision', 'founder', 'advisors', 'team'
+    'profile', 'vision', 'founder', 'advisors', 'strategic', 'aiexpert', 'team'
   ]);
 
   // Set active tab based on URL parameter
   useEffect(() => {
     const tabParam = searchParams.get('tab');
-    if (tabParam && ['profile', 'vision', 'founder', 'advisors', 'team'].includes(tabParam)) {
+    if (tabParam && ['profile', 'vision', 'founder', 'advisors', 'strategic', 'aiexpert', 'team'].includes(tabParam)) {
       setActiveTab(tabParam);
     }
   }, [searchParams]);
@@ -100,7 +100,7 @@ const About = () => {
     const pageTimer = setTimeout(() => {
       setLoading(false);
     }, 1000);
-    
+
     // Start section loading after page loads
     const sectionTimer = setTimeout(() => {
       simulateSectionLoading(activeTab, 1200);
@@ -121,6 +121,8 @@ const About = () => {
     { id: "vision", label: "Vision & Mission", active: false },
     { id: "founder", label: "Founder's Message", active: false },
     { id: "advisors", label: "Advisory Councils", active: false },
+    { id: "strategic", label: "Strategic Committee Council", active: false },
+    { id: "aiexpert", label: "AI Expert Committee", active: false },
     { id: "team", label: "Team Members", active: false }
   ];
 
@@ -133,7 +135,7 @@ const About = () => {
   return (
     <div className="font-dm-sans">
       <Header />
-      
+
       {/* Spacer for fixed header */}
       <div className="h-[104px]"></div>
 
@@ -257,7 +259,7 @@ const About = () => {
               {/* RECOGNIZED & AFFILIATED WITH SECTION */}
               <div className="mt-12">
                 <h2 className="text-center text-2xl font-bold text-[#3D1717] mb-8">
-                 Our Affiliations & Recognizations
+                  Our Affiliations & Recognizations
                 </h2>
                 {/* Auto-scrolling logos container */}
                 <div className="overflow-hidden relative">
@@ -607,7 +609,7 @@ const About = () => {
                 {/* Header */}
                 <div>
                   <div className="inline-block bg-[#EF7F2C] text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
-                     Director
+                    Director
                   </div>
                   <h3 className="text-3xl font-bold text-[#EF7F2C] mb-4">Mrs. Samidha Gandhi</h3>
                   <p className="text-gray-700 leading-relaxed text-base">
@@ -868,7 +870,7 @@ const About = () => {
       {activeTab === "advisors" && (
         <section className="bg-white py-2 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            
+
             {/* Section Header */}
             <div className="text-center mb-16">
               <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
@@ -878,14 +880,14 @@ const About = () => {
                 Industry Advisory Board
               </h2>
               <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                Distinguished industry leaders and experts who guide our strategic vision and ensure 
+                Distinguished industry leaders and experts who guide our strategic vision and ensure
                 our programs remain aligned with evolving market demands and technological advancements.
               </p>
             </div>
 
             {/* Advisors Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              
+
               {/* Col. Inder S Gahlaut */}
               <div className="group">
                 <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -929,9 +931,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Former Head BHR, Tech</p>
                       <p className="text-xs text-gray-600 mb-1">Mahindra</p>
-                      <a 
-                        href="https://www.linkedin.com/in/shivi-kalia-7686881/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/shivi-kalia-7686881/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -961,9 +963,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CEO Olive Data Centre Pvt.</p>
                       <p className="text-xs text-gray-600 mb-1">Based in California</p>
-                      <a 
-                        href="https://www.linkedin.com/in/pravinpmohite?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/pravinpmohite?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -993,9 +995,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">VP & Vertical Head IoT</p>
                       <p className="text-xs text-gray-600 mb-1">Reliance Jio</p>
-                      <a 
-                        href="https://www.linkedin.com/in/rajumohan/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/rajumohan/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1025,9 +1027,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Director General COAI</p>
                       <p className="text-xs text-gray-600 mb-1">Cellular Operators Association</p>
-                      <a 
-                        href="https://www.linkedin.com/in/spkochhar/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/spkochhar/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1057,9 +1059,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Former Senior Solution</p>
                       <p className="text-xs text-gray-600 mb-1">Manager, IBM</p>
-                      <a 
-                        href="https://www.linkedin.com/in/sushma-bhayani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/sushma-bhayani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1089,9 +1091,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CEO JP Research India</p>
                       <p className="text-xs text-gray-600 mb-1">Pvt. Ltd. (USA Based)</p>
-                      <a 
-                        href="https://www.linkedin.com/in/pkjaswani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/pkjaswani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1121,9 +1123,9 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">MD & CTO</p>
                       <p className="text-xs text-gray-600 mb-1">Elliot Systems</p>
-                      <a 
-                        href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1134,9 +1136,9 @@ const About = () => {
                 </div>
               </div>
 
-          
 
-           
+
+
 
             </div>
 
@@ -1150,14 +1152,14 @@ const About = () => {
                   Academic Advisory Board
                 </h2>
                 <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                  Renowned academicians and educational leaders who ensure our curriculum remains academically rigorous, 
+                  Renowned academicians and educational leaders who ensure our curriculum remains academically rigorous,
                   research-oriented, and aligned with the highest educational standards.
                 </p>
               </div>
 
               {/* Academic Advisors Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
+
                 {/* Dr. Mukul Sutaone */}
                 <div className="group">
                   <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -1267,14 +1269,14 @@ const About = () => {
                   Organizational Network Resources
                 </h2>
                 <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                  Distinguished leaders and industry experts who contribute to our organizational network and strategic initiatives, 
+                  Distinguished leaders and industry experts who contribute to our organizational network and strategic initiatives,
                   bringing diverse perspectives and valuable connections to enhance our mission.
                 </p>
               </div>
 
               {/* Network Resources Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
+
                 {/* Padmashri Manoj Joshi */}
                 <div className="group">
                   <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -1317,9 +1319,9 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Chairman of the Dalit Indian</p>
                         <p className="text-xs text-gray-600 mb-1">Chamber of Commerce and Industry (DICCI)</p>
-                        <a 
-                          href="https://www.linkedin.com/in/milind-kamble-686814278/" 
-                          target="_blank" 
+                        <a
+                          href="https://www.linkedin.com/in/milind-kamble-686814278/"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                         >
@@ -1349,9 +1351,9 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Director Kinetic Engineering</p>
                         <p className="text-xs text-gray-600 mb-1">Member AICTE Board</p>
-                        <a 
-                          href="https://www.linkedin.com/in/deepak-shikarpur-5b047b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
+                        <a
+                          href="https://www.linkedin.com/in/deepak-shikarpur-5b047b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                         >
@@ -1403,9 +1405,9 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Vice President, Maharashtra Economic Development Council</p>
-                        <a 
-                          href="https://www.linkedin.com/in/sachinitkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
+                        <a
+                          href="https://www.linkedin.com/in/sachinitkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                         >
@@ -1483,9 +1485,9 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Founder and Managing</p>
                         <p className="text-xs text-gray-600 mb-1">Editor India CSR Network</p>
-                        <a 
-                          href="https://www.linkedin.com/in/rusen-kumar-2a514629b/" 
-                          target="_blank" 
+                        <a
+                          href="https://www.linkedin.com/in/rusen-kumar-2a514629b/"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                         >
@@ -1515,9 +1517,9 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">CEO</p>
                         <p className="text-xs text-orange-600">Dairy and Food Industry,Scaling Growth, Sustainability Innovation</p>
-                        <a 
-                          href="https://www.linkedin.com/in/rajiv-mitra-0189296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
+                        <a
+                          href="https://www.linkedin.com/in/rajiv-mitra-0189296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-[#EF7F2C] hover:underline mt-1"
                         >
@@ -1547,266 +1549,14 @@ const About = () => {
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Global Leader</p>
                         <p className="text-xs text-orange-600">Digital Transformation Expert, ESG & Renewable Energy</p>
-                        <a 
-                          href="https://www.linkedin.com/in/aniruddhashahapure-independentdirector-esg-ai-ml-cybersecurity?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
+                        <a
+                          href="https://www.linkedin.com/in/aniruddhashahapure-independentdirector-esg-ai-ml-cybersecurity?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs text-[#EF7F2C] hover:underline mt-1"
                         >
                           LinkedIn Profile
                         </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            {/* Strategic Committee Council Section */}
-            <div className="mt-20">
-              <div className="text-center mb-12">
-                <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
-                  Strategic Committee Council
-                </span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-6">
-                  Strategic Committee Council
-                </h2>
-                <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                  Key members guiding the strategic direction and operations of our councils.
-                </p>
-              </div>
-
-              {/* Committee Members Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                {/* Mr. Prashant Pund */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                        <img
-                          src={prashantPundImg}
-                          alt="Mr. Prashant Pund"
-                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Prashant Pund
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Vikrant Vartak */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Vikrant Vartak
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <a 
-                          href="https://www.linkedin.com/in/vikrant-vartak-9127321a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
-                        >
-                          LinkedIn Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Balveer Chawla */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Balveer Chawla
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <a 
-                          href="https://www.linkedin.com/in/balvirchawla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
-                        >
-                          LinkedIn Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Abhijeet Khurpe */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Abhijeet Khurpe
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <a 
-                          href="https://www.linkedin.com/in/abhijit-khurape-950a9440?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
-                        >
-                          LinkedIn Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            {/* AI Expert Committee Section */}
-            <div className="mt-20">
-              <div className="text-center mb-12">
-                <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
-                  AI Expert Committee
-                </span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#3D1717] mb-6">
-                  AI Expert Committee
-                </h2>
-                <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                  Leading experts guiding our vision and integration of Artificial Intelligence technologies.
-                </p>
-              </div>
-
-              {/* Committee Members Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                {/* Mr. Kedar Deo */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Kedar Deo
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <p className="text-xs text-gray-600 mb-1">CTO</p>
-                        <p className="text-xs text-orange-600 font-medium">Tech Mahindra, Accenture, Geometric</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Girish Khilari */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                        <img
-                          src={girishKhilariImg}
-                          alt="Mr. Girish Khilari"
-                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Girish Khilari
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <p className="text-xs text-gray-600 mb-1">CTO</p>
-                        <p className="text-xs text-orange-600 font-medium">Elliot Systems</p>
-                        <a 
-                          href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-xs text-[#EF7F2C] hover:underline mt-1"
-                        >
-                          LinkedIn Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Ravindra Pal Singh */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Ravindra Pal Singh
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <p className="text-xs text-gray-600 mb-1">Director Software Engineering</p>
-                        <p className="text-xs text-orange-600 font-medium">Amdocs Ltd</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Mandar Halbhavi */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Mandar Halbhavi
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <p className="text-xs text-gray-600 mb-1">Deputy General Manager</p>
-                        <p className="text-xs text-orange-600 font-medium">Jio Platforms Ltd</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mr. Manoj Deshmukh */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
-                        <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Mr. Manoj Deshmukh
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <p className="text-xs text-gray-600 mb-1">CTO</p>
-                        <p className="text-xs text-orange-600 font-medium">iConnect Info Solutions</p>
                       </div>
                     </div>
                   </div>
@@ -1822,9 +1572,9 @@ const About = () => {
                   Dual Advisory Excellence
                 </h3>
                 <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                  Our comprehensive advisory structure combines industry expertise with academic excellence and organizational network resources. 
-                  The Industry Advisory Board ensures market relevance and practical application, while the 
-                  Academic Advisory Board maintains educational rigor and research-based learning approaches, 
+                  Our comprehensive advisory structure combines industry expertise with academic excellence and organizational network resources.
+                  The Industry Advisory Board ensures market relevance and practical application, while the
+                  Academic Advisory Board maintains educational rigor and research-based learning approaches,
                   creating a perfect balance for holistic skill development.
                 </p>
               </div>
@@ -1834,11 +1584,283 @@ const About = () => {
         </section>
       )}
 
+      {/* STRATEGIC COMMITTEE COUNCIL SECTION */}
+      {activeTab === "strategic" && (
+        <section className="bg-white py-2 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                Strategic Committee Council
+              </span>
+              <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                Strategic Committee Council
+              </h2>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Key members guiding the strategic direction and operations of our councils.
+              </p>
+            </div>
+
+            {/* Committee Members Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+              {/* Mr. Prashant Pund */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={prashantPundImg}
+                        alt="Mr. Prashant Pund"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Prashant Pund
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Vikrant Vartak */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Vikrant Vartak
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <a
+                        href="https://www.linkedin.com/in/vikrant-vartak-9127321a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Balveer Chawla */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Balveer Chawla
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <a
+                        href="https://www.linkedin.com/in/balvirchawla?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Abhijeet Khurpe */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Abhijeet Khurpe
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <a
+                        href="https://www.linkedin.com/in/abhijit-khurape-950a9440?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* AI EXPERT COMMITTEE SECTION */}
+      {activeTab === "aiexpert" && (
+        <section className="bg-white py-2 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                AI Expert Committee
+              </span>
+              <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                AI Expert Committee
+              </h2>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Leading experts guiding our vision and integration of Artificial Intelligence technologies.
+              </p>
+            </div>
+
+            {/* Committee Members Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+              {/* Mr. Kedar Deo */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Kedar Deo
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">CTO</p>
+                      <p className="text-xs text-orange-600 font-medium">Tech Mahindra, Accenture, Geometric</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Girish Khilari */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={girishKhilariImg}
+                        alt="Mr. Girish Khilari"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Girish Khilari
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">CTO</p>
+                      <p className="text-xs text-orange-600 font-medium">Elliot Systems</p>
+                      <a
+                        href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Ravindra Pal Singh */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Ravindra Pal Singh
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Director Software Engineering</p>
+                      <p className="text-xs text-orange-600 font-medium">Amdocs Ltd</p>
+                      <a
+                        href="https://www.linkedin.com/in/ravinder-pal-singh-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Mandar Halbhavi */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Mandar Halbhavi
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Deputy General Manager</p>
+                      <p className="text-xs text-orange-600 font-medium">Jio Platforms Ltd</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mr. Manoj Deshmukh */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Manoj Deshmukh
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">CTO</p>
+                      <p className="text-xs text-orange-600 font-medium">iConnect Info Solutions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* TEAM MEMBERS SECTION */}
       {activeTab === "team" && (
         <section className="bg-white py-4 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            
+
             {/* Section Header */}
             <div className="text-center mb-16">
               <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
@@ -1848,14 +1870,14 @@ const About = () => {
                 Team Members
               </h2>
               <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                Meet our dedicated team of professionals who drive innovation, excellence, and success 
+                Meet our dedicated team of professionals who drive innovation, excellence, and success
                 in skill development and industry partnerships.
               </p>
             </div>
 
             {/* Team Members Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              
+
               {/* Mr. Prashant Pund */}
               <div className="group">
                 <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -1874,9 +1896,9 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Core Business Strategist</p>
-                      <a 
-                        href="https://www.linkedin.com/in/prashant-pund-65b7b51b" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/prashant-pund-65b7b51b"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1905,9 +1927,9 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Education Delivery Specialist</p>
-                      <a 
-                        href="https://www.linkedin.com/in/minal-saraf-2737501b" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/minal-saraf-2737501b"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1940,9 +1962,9 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Partner Engagement</p>
-                      <a 
-                        href="https://www.linkedin.com/in/dr-sanjay-gandhi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/dr-sanjay-gandhi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
                       >
@@ -1976,7 +1998,7 @@ const About = () => {
                 </div>
               </div>
 
-             
+
             </div>
 
             {/* Bottom Section */}
@@ -1986,8 +2008,8 @@ const About = () => {
                   Collaborative Excellence
                 </h3>
                 <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                  Our diverse team brings together expertise in business strategy, education delivery, 
-                  industry partnerships, and operational excellence. Each member contributes unique skills 
+                  Our diverse team brings together expertise in business strategy, education delivery,
+                  industry partnerships, and operational excellence. Each member contributes unique skills
                   and perspectives to drive our mission of bridging the gap between education and industry requirements.
                 </p>
               </div>
@@ -1998,7 +2020,7 @@ const About = () => {
       )}
 
       <Footer />
-      
+
       {/* CSS Animation for scrolling logos */}
       <style>{`
         @keyframes scroll {
