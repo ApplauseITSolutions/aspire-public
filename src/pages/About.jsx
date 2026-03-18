@@ -1826,6 +1826,14 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Deputy General Manager</p>
                       <p className="text-xs text-orange-600 font-medium">Jio Platforms Ltd</p>
+                      <a
+                        href="https://www.linkedin.com/in/mandarhalbhavi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1846,6 +1854,14 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CTO</p>
                       <p className="text-xs text-orange-600 font-medium">iConnect Info Solutions</p>
+                      <a
+                        href="https://www.linkedin.com/in/manojdeshmukh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
