@@ -159,17 +159,17 @@ const About = () => {
 
       {/* NAVIGATION TABS */}
       <section className="bg-white border-b border-gray-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap justify-center gap-0">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4">
+          <div className="flex overflow-x-auto scrollbar-hide justify-start lg:justify-center gap-0 whitespace-nowrap" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 sm:px-8 py-4 font-medium text-sm transition-colors border-b-2 ${activeTab === tab.id
+                className={`flex-shrink-0 px-4 sm:px-5 py-4 font-medium transition-colors border-b-2 ${activeTab === tab.id
                   ? "text-[#EF7F2C] border-[#EF7F2C]"
                   : "text-gray-600 border-transparent hover:text-[#EF7F2C]"
                   }`}
-                style={{ fontSize: '14px' }}
+                style={{ fontSize: '13px' }}
               >
                 {tab.label}
               </button>
