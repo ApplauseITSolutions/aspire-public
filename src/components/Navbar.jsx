@@ -17,7 +17,7 @@ const Navbar = () => {
     { id: "vision", label: "Vision & Mission" },
     { id: "founder", label: "Founder's Message" },
     { id: "advisors", label: "Advisory Councils" },
-    { id: "strategic", label: "Strategic Committee Council" },
+    { id: "strategic", label: "Strategic Executive Council" },
     { id: "aiexpert", label: "AI Expert Committee" },
     { id: "team", label: "Team Members" }
   ];

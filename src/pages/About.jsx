@@ -127,7 +127,7 @@ const About = () => {
     { id: "vision", label: "Vision & Mission", active: false },
     { id: "founder", label: "Founder's Message", active: false },
     { id: "advisors", label: "Advisory Councils", active: false },
-    { id: "strategic", label: "Strategic Committee Council", active: false },
+    { id: "strategic", label: "Strategic Executive Council", active: false },
     { id: "aiexpert", label: "AI Expert Committee", active: false },
     { id: "team", label: "Team Members", active: false }
   ];
@@ -1110,37 +1110,6 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Mr. Girish Khilari */}
-              <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                      <img
-                        src={girishKhilariImg}
-                        alt="Mr. Girish Khilari"
-                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                      Mr. Girish Khilari
-                    </h3>
-                    <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">MD & CTO</p>
-                      <p className="text-xs text-gray-600 mb-1">Elliot Systems</p>
-                      <a
-                        href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
-                      >
-                        LinkedIn Profile
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
 
 
@@ -1590,22 +1559,22 @@ const About = () => {
         </section>
       )}
 
-      {/* STRATEGIC COMMITTEE COUNCIL SECTION */}
+      {/* Strategic Executive Council SECTION */}
       {activeTab === "strategic" && (
         <section className="bg-white py-2 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
             {/* Section Header */}
             <div className="text-center mb-16">
-              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
-                Strategic Committee Council
-              </span>
+              {/* <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                Strategic Executive Council
+              </span> */}
               <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
-                Strategic Committee Council
+                Strategic Executive Council
               </h2>
-              <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+              {/* <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
                 Key members guiding the strategic direction and operations of our councils.
-              </p>
+              </p> */}
             </div>
 
             {/* Committee Members Grid */}
@@ -1731,14 +1700,14 @@ const About = () => {
 
             {/* Section Header */}
             <div className="text-center mb-16">
-              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+              {/* <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
                 AI Expert Committee
-              </span>
+              </span> */}
               <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
                 AI Expert Committee
               </h2>
               <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                Leading experts guiding our vision and integration of Artificial Intelligence technologies.
+               Leading Experts guiding our vision and driving the integration of Artificial Intelligence technologies
               </p>
             </div>
 
@@ -1917,6 +1886,25 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
 
+              {/* Mr. Vikram Thite */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center bg-white rounded-2xl relative shadow-inner">
+                      <User className="w-16 h-16 text-orange-300 group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Mr. Vikram Thite
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-orange-600 mb-1">Learning & Development</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Mrs. Minal Gujarathi */}
               <div className="group">
                 <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -1934,15 +1922,7 @@ const About = () => {
                       Mrs. Minal Gujarathi
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">Education Delivery Specialist</p>
-                      <a
-                        href="https://www.linkedin.com/in/minal-saraf-2737501b"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
-                      >
-                        LinkedIn Profile
-                      </a>
+                      <p className="text-xs text-orange-600 mb-1">Education Delivery Specialist</p>
                     </div>
                   </div>
                 </div>
@@ -1969,15 +1949,7 @@ const About = () => {
                       Mr. Amit Gandhi
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">Partner Engagement</p>
-                      <a
-                        href="https://www.linkedin.com/in/dr-sanjay-gandhi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
-                      >
-                        LinkedIn Profile
-                      </a>
+                      <p className="text-xs text-orange-600 mb-1">Partner Engagement</p>
                     </div>
                   </div>
                 </div>
