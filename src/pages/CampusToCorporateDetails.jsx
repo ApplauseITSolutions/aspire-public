@@ -12,6 +12,19 @@ const CampusToCorporateDetails = () => {
   const [searchParams] = useSearchParams();
   const { isLoading, setLoading } = useLoading(true, 800);
   const [activeTab, setActiveTab] = useState("ready4industry");
+  const [showEnrollModal, setShowEnrollModal] = useState(false);
+  const [enrollForm, setEnrollForm] = useState({ name: '', college: '', contact: '', email: '' });
+  const [enrollSubmitted, setEnrollSubmitted] = useState(false);
+
+  const handleEnrollSubmit = (e) => {
+    e.preventDefault();
+    setEnrollSubmitted(true);
+    setTimeout(() => {
+      setShowEnrollModal(false);
+      setEnrollSubmitted(false);
+      setEnrollForm({ name: '', college: '', contact: '', email: '' });
+    }, 2000);
+  };
 
   useEffect(() => {
     const tabParam = searchParams.get('tab');
@@ -272,7 +285,10 @@ const CampusToCorporateDetails = () => {
                   >
                     Know More
                   </button>
-                  <button className="px-8 py-3 bg-[#3D1717] text-white font-semibold rounded-lg hover:bg-[#2a1010] transition-colors duration-300 shadow-lg">
+                  <button
+                    onClick={() => setShowEnrollModal(true)}
+                    className="px-8 py-3 bg-[#3D1717] text-white font-semibold rounded-lg hover:bg-[#2a1010] transition-colors duration-300 shadow-lg"
+                  >
                     Enroll Now
                   </button>
                 </div>
@@ -282,6 +298,104 @@ const CampusToCorporateDetails = () => {
 
         </div>
       </section>
+
+      {/* ENROLLMENT MODAL */}
+      {showEnrollModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 py-6">
+          <div className="bg-[#f0f4f8] rounded-2xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+            {/* Header */}
+            <div className="bg-[#EF7F2C] px-6 py-4 flex items-center justify-between flex-shrink-0">
+              <div className="flex items-center gap-2">
+                <span className="text-white text-lg">🎓</span>
+                <h2 className="text-white font-bold text-base">Enrollment for Virtual Internship</h2>
+              </div>
+              <button onClick={() => setShowEnrollModal(false)} className="text-white text-2xl font-bold hover:opacity-80 leading-none">×</button>
+            </div>
+
+            {/* Scrollable Form Body */}
+            <div className="overflow-y-auto flex-1">
+              <form onSubmit={handleEnrollSubmit} className="p-5 space-y-3">
+                {enrollSubmitted ? (
+                  <div className="text-center py-8">
+                    <div className="text-green-600 text-5xl mb-3">✓</div>
+                    <p className="text-gray-700 font-semibold text-lg">Enrollment Submitted!</p>
+                    <p className="text-gray-500 text-sm mt-1">We'll get back to you shortly.</p>
+                  </div>
+                ) : (
+                  <>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Name of Student *</label>
+                      <input
+                        type="text"
+                        required
+                        value={enrollForm.name}
+                        onChange={(e) => setEnrollForm({ ...enrollForm, name: e.target.value })}
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#EF7F2C] shadow-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">College Name *</label>
+                      <input
+                        type="text"
+                        required
+                        value={enrollForm.college}
+                        onChange={(e) => setEnrollForm({ ...enrollForm, college: e.target.value })}
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#EF7F2C] shadow-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Contact No *</label>
+                      <input
+                        type="tel"
+                        required
+                        value={enrollForm.contact}
+                        onChange={(e) => setEnrollForm({ ...enrollForm, contact: e.target.value })}
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#EF7F2C] shadow-sm"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                      <input
+                        type="email"
+                        required
+                        value={enrollForm.email}
+                        onChange={(e) => setEnrollForm({ ...enrollForm, email: e.target.value })}
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#EF7F2C] shadow-sm"
+                      />
+                    </div>
+
+                    {/* Fee Breakdown */}
+                    <div className="bg-white rounded-xl border-l-4 border-[#EF7F2C] px-4 py-3 text-sm space-y-1">
+                      <div className="flex justify-between text-gray-700">
+                        <span>Base Amount:</span><span>₹1500.00</span>
+                      </div>
+                      <div className="flex justify-between text-gray-700">
+                        <span>CGST (9%):</span><span>₹135.00</span>
+                      </div>
+                      <div className="flex justify-between text-gray-700">
+                        <span>SGST (9%):</span><span>₹135.00</span>
+                      </div>
+                      <div className="flex justify-between text-gray-700">
+                        <span>Payment Gateway Charges (2%):</span><span>₹35.40</span>
+                      </div>
+                      <div className="flex justify-between font-bold text-[#EF7F2C] pt-1 border-t border-gray-100">
+                        <span>Total Amount:</span><span>₹1805.40</span>
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 rounded-xl transition-colors duration-200 text-sm"
+                    >
+                      Submit Enrollment
+                    </button>
+                  </>
+                )}
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
