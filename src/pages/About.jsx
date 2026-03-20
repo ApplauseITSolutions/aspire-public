@@ -1628,6 +1628,14 @@ const About = () => {
                       Mr. Prashant Pund
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <a
+                        href="https://www.linkedin.com/in/prashant-pund-65b7b51b"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1752,6 +1760,14 @@ const About = () => {
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CTO</p>
                       <p className="text-xs text-orange-600 font-medium">Tech Mahindra, Accenture, Geometric</p>
+                      <a
+                        href="https://www.linkedin.com/in/kedardeo75?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1900,36 +1916,6 @@ const About = () => {
             {/* Team Members Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
-              {/* Mr. Prashant Pund */}
-              <div className="group">
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                  <div className="relative overflow-hidden">
-                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                      <img
-                        src={prashantPundImg}
-                        alt="Mr. Prashant Pund"
-                        className="w-full h-full object-fit rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                      Mr. Prashant Pund
-                    </h3>
-                    <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-gray-600 mb-1">Core Business Strategist</p>
-                      <a
-                        href="https://www.linkedin.com/in/prashant-pund-65b7b51b"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-orange-600 font-medium hover:text-orange-800 transition-colors"
-                      >
-                        LinkedIn Profile
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* Mrs. Minal Gujarathi */}
               <div className="group">
