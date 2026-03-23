@@ -1701,9 +1701,6 @@ const About = () => {
 
             {/* Section Header */}
             <div className="text-center mb-16">
-              {/* <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
-                AI Expert Committee
-              </span> */}
               <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
                 AI Expert Committee
               </h2>
