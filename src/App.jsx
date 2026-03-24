@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,10 +14,22 @@ import CyberSecurityDetails from "./pages/CyberSecurityDetails";
 import EEDPDetails from "./pages/EEDPDetails";
 import Careers from "./pages/Careers";
 
+function AdminRedirect() {
+  useEffect(() => {
+    const adminPath = window.location.pathname.replace(/^\/admin/, "") || "/";
+    const normalizedPath = adminPath.startsWith('/') ? adminPath : `/${adminPath}`;
+    const targetUrl = `${window.location.protocol}//${window.location.hostname}/admin/#${normalizedPath}${window.location.search}`;
+    window.location.replace(targetUrl);
+  }, []);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/admin/*" element={<AdminRedirect />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/programs" element={<Programs />} />

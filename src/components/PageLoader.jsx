@@ -40,34 +40,6 @@ const PageLoader = () => {
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-100">
         <div className="h-full bg-gradient-to-r from-[#EF7F2C] via-orange-500 to-orange-400 rounded-full animate-progress"></div>
       </div>
-      
-      <style jsx>{`
-        @keyframes shine {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(100%);
-          }
-        }
-        
-        .animate-shine {
-          animation: shine 2s ease-in-out infinite;
-        }
-        
-        @keyframes progress {
-          0% {
-            width: 0%;
-          }
-          100% {
-            width: 100%;
-          }
-        }
-        
-        .animate-progress {
-          animation: progress 3s ease-out infinite;
-        }
-      `}</style>
     </div>
   );
 };

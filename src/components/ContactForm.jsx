@@ -1,5 +1,6 @@
 import { useState } from "react";
 import enquiryImg from "../assets/images/aspire-doc/enquiry.png";
+import { submitContactForm } from "../utils/api";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const ContactForm = () => {
     enquiry: '',
     captcha: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleInputChange = (e) => {
     setFormData({
@@ -17,10 +20,47 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    
+    // Simple captcha validation
+    if (formData.captcha !== '1718') {
+      setSubmitMessage('Incorrect captcha. Please try again.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitMessage('');
+
+    try {
+      const submissionData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: 'Contact Form Enquiry',
+        message: formData.enquiry
+      };
+
+      const response = await submitContactForm(submissionData);
+      
+      if (response.status) {
+        setSubmitMessage('Thank you! Your enquiry has been submitted successfully.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          enquiry: '',
+          captcha: ''
+        });
+      } else {
+        setSubmitMessage('Failed to submit enquiry. Please try again.');
+      }
+    } catch (error) {
+      setSubmitMessage('An error occurred. Please try again later.');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -155,13 +195,23 @@ const ContactForm = () => {
                   {/* SUBMIT BUTTON */}
                   <button
                     type="submit"
-                    className="w-full bg-[#EF7F2C] text-white py-3 sm:py-3 px-4 rounded-lg font-medium hover:bg-[#d6691f] transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+                    disabled={isSubmitting}
+                    className="w-full bg-[#EF7F2C] text-white py-3 sm:py-3 px-4 rounded-lg font-medium hover:bg-[#d6691f] transition-colors flex items-center justify-center gap-2 text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Enquiry
-                    <svg width="14" height="14" className="sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                    {isSubmitting ? 'Submitting...' : 'Send Enquiry'}
+                    {!isSubmitting && (
+                      <svg width="14" height="14" className="sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
                   </button>
+
+                  {/* SUBMIT MESSAGE */}
+                  {submitMessage && (
+                    <div className={`p-3 rounded-lg text-sm ${submitMessage.includes('success') ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                      {submitMessage}
+                    </div>
+                  )}
 
                 </form>
               </div>

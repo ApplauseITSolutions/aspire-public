@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { X, Send } from 'lucide-react';
+import { submitEnquiryForm } from '../utils/api';
 
 const EnquiryModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
   
   const [captchaCode, setCaptchaCode] = useState('');
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Generate random captcha
   const generateCaptcha = () => {
@@ -144,21 +146,42 @@ const EnquiryModal = ({ isOpen, onClose }) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (validateForm()) {
-      console.log('Form submitted:', formData);
-      // Add your form submission logic here
-      alert('Enquiry submitted successfully!');
-      onClose();
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        enquiry: '',
-        captcha: ''
-      });
+      setIsSubmitting(true);
+      
+      try {
+        const submissionData = {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.enquiry
+        };
+
+        const response = await submitEnquiryForm(submissionData);
+        
+        if (response.status) {
+          alert('Enquiry submitted successfully!');
+          onClose();
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            enquiry: '',
+            captcha: ''
+          });
+          setErrors({});
+        } else {
+          alert('Failed to submit enquiry. Please try again.');
+        }
+      } catch (error) {
+        alert('An error occurred. Please try again later.');
+        console.error('Form submission error:', error);
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -282,10 +305,11 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3.5 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-base shadow-lg hover:shadow-xl mt-2"
+              disabled={isSubmitting}
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3.5 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-base shadow-lg hover:shadow-xl mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Enquiry
-              <Send size={18} />
+              {isSubmitting ? 'Submitting...' : 'Send Enquiry'}
+              {!isSubmitting && <Send size={18} />}
             </button>
           </form>
         </div>

@@ -320,3 +320,30 @@ label {
   letter-spacing: -0.01em;
   line-height: 1.4;
 }
+
+/* PageLoader animations */
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shine {
+  animation: shine 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-progress {
+  animation: progress 3s ease-out infinite;
+}
