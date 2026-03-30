@@ -26,18 +26,18 @@ const TopHeader = () => {
         <div className="flex items-center gap-2 sm:gap-3">
           {/* SOCIAL ICONS */}
           <div className="flex items-center gap-1 sm:gap-2">
-            <span className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition cursor-pointer">
+            <a href="https://www.facebook.com/share/17ZaQxt6xD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition">
               <img src={fbIcon} alt="Facebook" className="w-3 h-3 sm:w-3.5 sm:h-3.5" style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2270%) hue-rotate(13deg) brightness(98%) contrast(89%)' }} />
-            </span>
-            <span className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition cursor-pointer">
+            </a>
+            <a href="https://www.linkedin.com/company/aspire-knowledge-and-skills-india-pvt-ltd/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition">
               <img src={linkedinIcon} alt="LinkedIn" className="w-3 h-3 sm:w-3.5 sm:h-3.5" style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2270%) hue-rotate(13deg) brightness(98%) contrast(89%)' }} />
-            </span>
-            <span className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition cursor-pointer">
+            </a>
+            <a href="https://www.instagram.com/aspire_india_official_?igsh=MTc4N292a3o1aTQzdA==" target="_blank" rel="noopener noreferrer" className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition">
               <img src={instaIcon} alt="Instagram" className="w-3 h-3 sm:w-3.5 sm:h-3.5" style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2270%) hue-rotate(13deg) brightness(98%) contrast(89%)' }} />
-            </span>
-            <span className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition cursor-pointer">
+            </a>
+            <a href="https://youtube.com/@aspireknowledgeskillsindia?si=XvCiV7-3dLlgjFE5" target="_blank" rel="noopener noreferrer" className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 transition">
               <img src={ytIcon} alt="YouTube" className="w-3 h-3 sm:w-3.5 sm:h-3.5" style={{ filter: 'brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2270%) hue-rotate(13deg) brightness(98%) contrast(89%)' }} />
-            </span>
+            </a>
           </div>
         </div>
       </div>

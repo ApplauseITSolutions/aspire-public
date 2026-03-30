@@ -32,18 +32,18 @@ const Footer = () => {
 
           {/* SOCIAL ICONS */}
           <div className="flex gap-3">
-            <span className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition cursor-pointer">
+            <a href="https://www.facebook.com/share/17ZaQxt6xD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition">
               <img src={fbIcon} alt="Facebook" className="w-4 h-4" />
-            </span>
-            <span className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition cursor-pointer">
+            </a>
+            <a href="https://www.linkedin.com/company/aspire-knowledge-and-skills-india-pvt-ltd/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition">
               <img src={linkedinIcon} alt="LinkedIn" className="w-4 h-4" />
-            </span>
-            <span className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition cursor-pointer">
+            </a>
+            <a href="https://www.instagram.com/aspire_india_official_?igsh=MTc4N292a3o1aTQzdA==" target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition">
               <img src={instaIcon} alt="Instagram" className="w-4 h-4" />
-            </span>
-            <span className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition cursor-pointer">
+            </a>
+            <a href="https://youtube.com/@aspireknowledgeskillsindia?si=XvCiV7-3dLlgjFE5" target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center rounded-md bg-[#4a2e18] hover:bg-orange-500 transition">
               <img src={ytIcon} alt="YouTube" className="w-4 h-4" />
-            </span>
+            </a>
           </div>
         </div>
 
