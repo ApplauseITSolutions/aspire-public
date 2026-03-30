@@ -41,9 +41,14 @@ import aniruddhaShahapureImg from "../assets/images/advisory board/Aniruddha-Sha
 
 // Import academic advisory board images
 import mukulSutaoneImg from "../assets/images/Academic Advisory Board/Mukul Sutaone.png";
-import karbhariKaleImg from "../assets/images/Academic Advisory Board/Karbhari Vishwanath Kale.png";
+
 import sunilBhirudImg from "../assets/images/Academic Advisory Board/Sunil Bhirud.png";
 import shailendraShuklaImg from "../assets/images/Academic Advisory Board/Shailendra Shukla.png";
+
+// Import Board of Studies images
+import netraNeelamImg from "../assets/images/advisory board/Dr Netra Neelam.webp";
+import sandeepMeshramImg from "../assets/images/advisory board/Sandeep-Sir.jpg";
+import mandarKaryakarteImg from "../assets/images/advisory board/mandar sir977.jpeg";
 
 // Import team member images
 import prashantPundImg from "../assets/images/advisory board/prashant pund.jpg";
@@ -91,13 +96,13 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const { isLoading, setLoading } = useLoading(true, 800);
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
-    'profile', 'vision', 'founder', 'advisors', 'strategic', 'aiexpert', 'team'
+    'profile', 'vision', 'founder', 'advisors', 'strategic', 'aiexpert', 'bos', 'team'
   ]);
 
   // Set active tab based on URL parameter
   useEffect(() => {
     const tabParam = searchParams.get('tab');
-    if (tabParam && ['profile', 'vision', 'founder', 'advisors', 'strategic', 'aiexpert', 'team'].includes(tabParam)) {
+    if (tabParam && ['profile', 'vision', 'founder', 'advisors', 'strategic', 'aiexpert', 'bos', 'team'].includes(tabParam)) {
       setActiveTab(tabParam);
     }
   }, [searchParams]);
@@ -130,6 +135,7 @@ const About = () => {
     { id: "advisors", label: "Advisory Councils", active: false },
     { id: "strategic", label: "Strategic Executive Council", active: false },
     { id: "aiexpert", label: "AI Expert Committee", active: false },
+    { id: "bos", label: "Board of Studies (BoS)", active: false },
     { id: "team", label: "Team Members", active: false }
   ];
 
@@ -1160,30 +1166,6 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* Colonel Professor Karbhari Vishwanath Kale */}
-                <div className="group">
-                  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
-                    <div className="relative overflow-hidden">
-                      <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
-                        <img
-                          src={karbhariKaleImg}
-                          alt="Colonel Professor Karbhari Vishwanath Kale"
-                          className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                    </div>
-                    <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                      <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
-                        Col. Prof. Karbhari Vishwanath Kale
-                      </h3>
-                      <div className="min-h-[36px] flex flex-col items-center justify-center">
-                        <p className="text-xs text-gray-600 mb-1">Vice-Chancellor</p>
-                        <p className="text-xs text-orange-600 font-medium">Dr. Babasaheb Ambedkar Technological University (DBATU)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Prof. Sunil Bhirud */}
                 <div className="group">
                   <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
@@ -1708,7 +1690,7 @@ const About = () => {
                 AI Expert Committee
               </h2>
               <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-               Leading Experts guiding our vision and driving the integration of Artificial Intelligence technologies
+                Leading Experts guiding our vision and driving the integration of Artificial Intelligence technologies
               </p>
             </div>
 
@@ -1848,6 +1830,128 @@ const About = () => {
                       <p className="text-xs text-orange-600 font-medium">iConnect Info Solutions</p>
                       <a
                         href="https://www.linkedin.com/in/manojdeshmukh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* BOARD OF STUDIES (BoS) SECTION */}
+      {activeTab === "bos" && (
+        <section className="bg-white py-4 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <span className="inline-block bg-[#fff1e4] text-[#EF7F2C] text-sm px-6 py-2 rounded-full mb-4 font-medium shadow-sm">
+                Academic Excellence
+              </span>
+              <h2 className="text-4xl lg:text-4xl font-bold text-[#3D1717] mb-6">
+                Board of Studies (BoS)
+              </h2>
+              <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                Distinguished academic leaders who guide our curriculum and educational standards.
+              </p>
+            </div>
+
+            {/* BoS Members Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+              {/* Dr. Netra Neelam */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={netraNeelamImg}
+                        alt="Dr. Netra Neelam"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Dr. Netra Neelam
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Former Director</p>
+                      <p className="text-xs text-orange-600 font-medium">Symbiosis (SCMHRD)</p>
+                      <a
+                        href="https://www.linkedin.com/in/dr-netraneelam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dr. Sandeep Meshram */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={sandeepMeshramImg}
+                        alt="Dr. Sandeep Meshram"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Dr. Sandeep Meshram
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Associate Dean</p>
+                      <p className="text-xs text-orange-600 font-medium">COEP Technological University</p>
+                      <a
+                        href="https://www.linkedin.com/in/sandeepmeshram?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#EF7F2C] hover:underline mt-1"
+                      >
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dr. Mandar Karyakarte */}
+              <div className="group">
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-orange-200 h-[360px] flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <div className="aspect-square bg-gradient-to-br from-orange-100 to-orange-50 p-6 flex items-center justify-center">
+                      <img
+                        src={mandarKaryakarteImg}
+                        alt="Dr. Mandar Karyakarte"
+                        className="w-full h-full object-cover rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-4 text-center flex-1 flex flex-col justify-center">
+                    <h3 className="text-base font-bold text-[#3D1717] mb-2 min-h-[48px] flex items-center justify-center">
+                      Dr. Mandar Karyakarte
+                    </h3>
+                    <div className="min-h-[36px] flex flex-col items-center justify-center">
+                      <p className="text-xs text-gray-600 mb-1">Registrar</p>
+                      <p className="text-xs text-orange-600 font-medium">IIIT Allahabad</p>
+                      <a
+                        href="https://www.linkedin.com/in/mandar-karyakarte?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs text-[#EF7F2C] hover:underline mt-1"

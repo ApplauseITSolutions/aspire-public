@@ -19,6 +19,7 @@ const Navbar = () => {
     { id: "advisors", label: "Advisory Councils" },
     { id: "strategic", label: "Strategic Executive Council" },
     { id: "aiexpert", label: "AI Expert Committee" },
+    { id: "bos", label: "Board of Studies (BoS)" },
     { id: "team", label: "Team Members" }
   ];
 
