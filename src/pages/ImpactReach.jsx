@@ -243,7 +243,7 @@ const ImpactReachPage = () => {
 
                   {/* Content - Left Side */}
                   <div className="timeline-item-wrapper w-1/2 pr-8 flex justify-end">
-                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '148px' }}>
+                    <div className="timeline-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-l-orange-400 border border-orange-100 relative" style={{ width: '506px', height: '230px' }}>
                       {/* Arrow pointing to timeline */}
                       <div className="timeline-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-white"></div>
 
@@ -253,8 +253,11 @@ const ImpactReachPage = () => {
                         </div>
                         <div className="timeline-text-content flex-1">
                           <div className="timeline-year text-2xl font-bold text-orange-500 mb-1">2015</div>
-                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">PPP Model & Karnataka</h3>
-                          <p className="timeline-description text-body text-gray-600 text-sm leading-relaxed">Launched PPP model centres in GIDC & Karnataka Govt partnership.</p>
+                          <h3 className="timeline-title text-lg font-bold text-[#3D1717] mb-2">State Engagement Partners</h3>
+                          <div className="timeline-description text-body text-gray-600 text-sm leading-relaxed space-y-2">
+                            <p>• State Engagement Partner and launched PPP model centres in GIDC</p>
+                            <p>• State Engagement Partner with Karnataka Govt</p>
+                          </div>
                         </div>
                       </div>
                     </div>
