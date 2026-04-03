@@ -1732,14 +1732,20 @@ const Programs = () => {
 
       {/* Modal for programs without detail pages */}
       {selectedProgram && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedProgram(null)}
+        >
+          <div 
+            className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Modal Header with Image */}
             <div className="relative">
               <img
                 src={selectedProgram.image}
                 alt={selectedProgram.title}
-                className="w-full h-48 object-cover rounded-t-xl"
+                className="w-full h-48 object-cover object-top rounded-t-xl"
               />
               <button
                 onClick={() => setSelectedProgram(null)}
@@ -1752,23 +1758,23 @@ const Programs = () => {
             </div>
 
             {/* Modal Content */}
-            <div className="p-6">
-              <h2 className="text-2xl font-bold text-[#3b2a1a] mb-4">
+            <div className="p-8 text-center">
+              <h2 className="text-3xl font-bold text-[#3b2a1a] mb-4">
                 {selectedProgram.title}
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed whitespace-pre-line">
-                {selectedProgram.description}
+              
+              {/* Coming Soon Badge */}
+              <div className="inline-block bg-orange-100 text-orange-600 px-6 py-2 rounded-full mb-6">
+                <span className="text-lg font-semibold">Coming Soon</span>
+              </div>
+              
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                We're working on bringing you detailed information about this program. Stay tuned for updates!
               </p>
-            </div>
-
-            {/* Modal Footer */}
-            <div className="p-6 pt-0">
-              <button
-                onClick={() => setSelectedProgram(null)}
-                className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium"
-              >
-                Close
-              </button>
+              
+              <p className="text-gray-500 text-base">
+                For more information, please contact us or check back soon.
+              </p>
             </div>
           </div>
         </div>
