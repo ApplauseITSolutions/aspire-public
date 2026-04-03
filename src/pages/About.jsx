@@ -919,7 +919,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Skill Development PwC</p>
-                      <p className="text-xs text-orange-600 font-medium">CEO CGSE Specialist</p>
+                      <p className="text-xs text-gray-600 font-medium">CEO CGSE Specialist</p>
                     </div>
                   </div>
                 </div>
@@ -1160,7 +1160,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Director</p>
-                        <p className="text-xs text-orange-600 font-medium">Indian Institute of Information Technology, Allahabad</p>
+                        <p className="text-xs text-gray-600 font-medium">Indian Institute of Information Technology, Allahabad</p>
                       </div>
                     </div>
                   </div>
@@ -1184,7 +1184,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Vice Chancellor - COEP</p>
-                        <p className="text-xs text-orange-600 font-medium">Technological University (COEP Tech)</p>
+                        <p className="text-xs text-gray-600 font-medium">Technological University (COEP Tech)</p>
                       </div>
                     </div>
                   </div>
@@ -1208,7 +1208,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Professor</p>
-                        <p className="text-xs text-orange-600 font-medium">Indian Institute of Technology BHU, Varanasi</p>
+                        <p className="text-xs text-gray-600 font-medium">Indian Institute of Technology BHU, Varanasi</p>
                       </div>
                     </div>
                   </div>
@@ -1252,7 +1252,7 @@ const About = () => {
                         Padmashri Manoj Joshi
                       </h3>
                       <div className="min-h-[36px] flex items-center justify-center">
-                        <p className="text-xs text-orange-600 font-medium">Actor</p>
+                        <p className="text-xs text-gray-600 font-medium">Actor</p>
                       </div>
                     </div>
                   </div>
@@ -1339,7 +1339,7 @@ const About = () => {
                         Padmashri Shri Bhiku Ramji Idate
                       </h3>
                       <div className="min-h-[36px] flex items-center justify-center">
-                        <p className="text-xs text-orange-600 font-medium">Dada Idate</p>
+                        <p className="text-xs text-gray-600 font-medium">Dada Idate</p>
                       </div>
                     </div>
                   </div>
@@ -1394,7 +1394,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">President Sajag Nagrik Manch</p>
-                        <p className="text-xs text-orange-600 font-medium">RTI Activist</p>
+                        <p className="text-xs text-gray-600 font-medium">RTI Activist</p>
                       </div>
                     </div>
                   </div>
@@ -1418,7 +1418,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Former Chairman &</p>
-                        <p className="text-xs text-orange-600 font-medium">Managing Director NSIC</p>
+                        <p className="text-xs text-gray-600 font-medium">Managing Director NSIC</p>
                       </div>
                     </div>
                   </div>
@@ -1474,7 +1474,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">CEO</p>
-                        <p className="text-xs text-orange-600">Dairy and Food Industry,Scaling Growth, Sustainability Innovation</p>
+                        <p className="text-xs text-gray-600">Dairy and Food Industry,Scaling Growth, Sustainability Innovation</p>
                         <a
                           href="https://www.linkedin.com/in/rajiv-mitra-0189296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                           target="_blank"
@@ -1506,7 +1506,7 @@ const About = () => {
                       </h3>
                       <div className="min-h-[36px] flex flex-col items-center justify-center">
                         <p className="text-xs text-gray-600 mb-1">Global Leader</p>
-                        <p className="text-xs text-orange-600">Digital Transformation Expert, ESG & Renewable Energy</p>
+                        <p className="text-xs text-gray-600">Digital Transformation Expert, ESG & Renewable Energy</p>
                         <a
                           href="https://www.linkedin.com/in/aniruddhashahapure-independentdirector-esg-ai-ml-cybersecurity?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                           target="_blank"
@@ -1711,7 +1711,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CTO</p>
-                      <p className="text-xs text-orange-600 font-medium">Tech Mahindra, Accenture, Geometric</p>
+                      <p className="text-xs text-gray-600 font-medium">Tech Mahindra, Accenture, Geometric</p>
                       <a
                         href="https://www.linkedin.com/in/kedardeo75?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1743,7 +1743,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CTO</p>
-                      <p className="text-xs text-orange-600 font-medium">Elliot Systems</p>
+                      <p className="text-xs text-gray-600 font-medium">Elliot Systems</p>
                       <a
                         href="https://www.linkedin.com/in/girish-khilari-16aa421?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1771,7 +1771,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Director Software Engineering</p>
-                      <p className="text-xs text-orange-600 font-medium">Amdocs Ltd</p>
+                      <p className="text-xs text-gray-600 font-medium">Amdocs Ltd</p>
                       <a
                         href="https://www.linkedin.com/in/ravinder-pal-singh-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1799,7 +1799,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Deputy General Manager</p>
-                      <p className="text-xs text-orange-600 font-medium">Jio Platforms Ltd</p>
+                      <p className="text-xs text-gray-600 font-medium">Jio Platforms Ltd</p>
                       <a
                         href="https://www.linkedin.com/in/mandarhalbhavi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1827,7 +1827,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">CTO</p>
-                      <p className="text-xs text-orange-600 font-medium">iConnect Info Solutions</p>
+                      <p className="text-xs text-gray-600 font-medium">iConnect Info Solutions</p>
                       <a
                         href="https://www.linkedin.com/in/manojdeshmukh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1885,7 +1885,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Former Director</p>
-                      <p className="text-xs text-orange-600 font-medium">Symbiosis (SCMHRD)</p>
+                      <p className="text-xs text-gray-600 font-medium">Symbiosis (SCMHRD)</p>
                       <a
                         href="https://www.linkedin.com/in/dr-netraneelam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1917,7 +1917,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Associate Dean</p>
-                      <p className="text-xs text-orange-600 font-medium">COEP Technological University</p>
+                      <p className="text-xs text-gray-600 font-medium">COEP Technological University</p>
                       <a
                         href="https://www.linkedin.com/in/sandeepmeshram?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -1949,7 +1949,7 @@ const About = () => {
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
                       <p className="text-xs text-gray-600 mb-1">Registrar</p>
-                      <p className="text-xs text-orange-600 font-medium">IIIT Allahabad</p>
+                      <p className="text-xs text-gray-600 font-medium">IIIT Allahabad</p>
                       <a
                         href="https://www.linkedin.com/in/mandar-karyakarte?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"
@@ -2004,7 +2004,7 @@ const About = () => {
                       Mr. Vikram Thite
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-orange-600 mb-1">Learning & Development</p>
+                      <p className="text-xs text-gray-600 mb-1">Learning & Development</p>
                     </div>
                   </div>
                 </div>
@@ -2027,7 +2027,7 @@ const About = () => {
                       Mrs. Minal Gujarathi
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-orange-600 mb-1">Education Delivery Specialist</p>
+                      <p className="text-xs text-gray-600 mb-1">Education Delivery Specialist</p>
                     </div>
                   </div>
                 </div>
@@ -2054,7 +2054,7 @@ const About = () => {
                       Mr. Amit Gandhi
                     </h3>
                     <div className="min-h-[36px] flex flex-col items-center justify-center">
-                      <p className="text-xs text-orange-600 mb-1">Partner Engagement</p>
+                      <p className="text-xs text-gray-600 mb-1">Partner Engagement</p>
                     </div>
                   </div>
                 </div>
@@ -2077,7 +2077,7 @@ const About = () => {
                       Mrs. Neha Gupta
                     </h3>
                     <div className="min-h-[36px] flex items-center justify-center">
-                      <p className="text-xs text-orange-600 font-medium">Business Operations</p>
+                      <p className="text-xs text-gray-600 font-medium">Business Operations</p>
                     </div>
                   </div>
                 </div>
