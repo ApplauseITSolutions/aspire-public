@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -25,6 +25,7 @@ const Programs = () => {
   const { loadingStates, simulateSectionLoading } = useSectionLoading([
     'programs'
   ]);
+  const [selectedProgram, setSelectedProgram] = useState(null);
 
   useEffect(() => {
     // Only run once when component mounts
@@ -210,7 +211,14 @@ const Programs = () => {
                       Customized Content Development Competency...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'AEDP',
+                      description: 'ASPIRE focus on strategic consulting, Training Need Analysis, Learning Design, e-learning, Training Delivery, Customized Content Development Competency',
+                      image: aedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -241,7 +249,14 @@ const Programs = () => {
                       Customized Content Development Competency...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Quantum Computing',
+                      description: 'ASPIRE focus on strategic consulting, Training Need Analysis, Learning Design, e-learning, Training Delivery, Customized Content Development Competency',
+                      image: quantumComputingImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -272,7 +287,14 @@ const Programs = () => {
                       Customized Content Development Competency...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Credit Linked Courses',
+                      description: 'ASPIRE focus on strategic consulting, Training Need Analysis, Learning Design, e-learning, Training Delivery, Customized Content Development Competency',
+                      image: creditLinkedImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -399,7 +421,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in business intelligence, data analysis, and strategic decision-making tools...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Advanced Business Intelligence Analyst',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in business intelligence, data analysis, and strategic decision-making tools',
+                      image: advancedBusinessIntelligenceImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -428,7 +457,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master the art of analyzing and interpreting financial statements for strategic business...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Financial Statement Analysis & Interpretation',
+                      description: '30 Hours | 1 Credit NSDC. Master the art of analyzing and interpreting financial statements for strategic business',
+                      image: creditLinkedImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -457,7 +493,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive training in hedge fund accounting principles and operational procedures...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Hedge Fund Accounting & Fund Operations',
+                      description: '30 Hours | 1 Credit NSDC. Comprehensive training in hedge fund accounting principles and operational procedures',
+                      image: aedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -486,7 +529,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn global banking operations and investment banking fundamentals for career...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Global Banking & Investment Banking Operations',
+                      description: '30 Hours | 1 Credit NSDC. Learn global banking operations and investment banking fundamentals for career',
+                      image: campusToCorporateImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -515,7 +565,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Understand capital markets dynamics and equity derivatives trading strategies...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Capital Markets & Equity Derivatives',
+                      description: '30 Hours | 1 Credit NSDC. Understand capital markets dynamics and equity derivatives trading strategies',
+                      image: quantumComputingImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -544,7 +601,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master banking operations with focus on KYC procedures and anti-money laundering compliance...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Banking Operations, KYC & AML Compliance',
+                      description: '30 Hours | 1 Credit NSDC. Master banking operations with focus on KYC procedures and anti-money laundering compliance',
+                      image: cyberSecurityImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -573,7 +637,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn mutual fund distribution strategies and investment advisory services...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Mutual Fund Distribution and Investment Advisory',
+                      description: '30 Hours | 1 Credit NSDC. Learn mutual fund distribution strategies and investment advisory services',
+                      image: guaranteedInternshipImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -602,7 +673,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Explore generative AI technologies and their applications in business automation...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Generative AI for Automation',
+                      description: '30 Hours | 1 Credit NSDC. Explore generative AI technologies and their applications in business automation',
+                      image: cloudTechnologyImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -631,7 +709,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master Python programming and Power BI for financial analysis and reporting...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Python for Finance / Power BI for Finance',
+                      description: '30 Hours | 1 Credit NSDC. Master Python programming and Power BI for financial analysis and reporting',
+                      image: uiuxDeveloperImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -660,7 +745,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn the fundamentals of digital manufacturing and Industry 4.0 technologies...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Fundamental of Digital Manufacturing',
+                      description: '30 Hours | 1 Credit NSDC. Learn the fundamentals of digital manufacturing and Industry 4.0 technologies',
+                      image: eedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -689,7 +781,14 @@ const Programs = () => {
                       45 Hours | 1 Credit NSDC. Understand industrial communication protocols and networking in...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Fundamental of Industrial Communication Protocols',
+                      description: '45 Hours | 1 Credit NSDC. Understand industrial communication protocols and networking in',
+                      image: advancedBusinessIntelligenceImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -718,7 +817,14 @@ const Programs = () => {
                       60 Hours | 1.5 Credit NSDC. Get introduced to industrial robotics, automation systems, and robotic programming...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Introduction to Industrial Robotics',
+                      description: '60 Hours | 1.5 Credit NSDC. Get introduced to industrial robotics, automation systems, and robotic programming',
+                      image: creditLinkedImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -747,7 +853,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Master cloud application development with modern frameworks and deployment strategies...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Cloud Application Developer',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Master cloud application development with modern frameworks and deployment strategies',
+                      image: cloudTechnologyImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -776,7 +889,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Advanced training in cloud infrastructure analysis, optimization, and management...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Advanced Cloud Infrastructure Analyst',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Advanced training in cloud infrastructure analysis, optimization, and management',
+                      image: advancedBusinessIntelligenceImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -805,7 +925,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Learn IoT principles, software development, and data analysis for connected devices...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Principles of IoT - Software Analyst',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Learn IoT principles, software development, and data analysis for connected devices',
+                      image: quantumComputingImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -834,7 +961,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in web and mobile application development technologies...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Application Developer - Web & Mobile',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Comprehensive training in web and mobile application development technologies',
+                      image: uiuxDeveloperImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -895,7 +1029,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Specialized training in financial fraud detection, investigation techniques, and compliance...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Certified Financial Fraud Investigator',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Specialized training in financial fraud detection, investigation techniques, and compliance',
+                      image: aedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -924,7 +1065,14 @@ const Programs = () => {
                       60 Hours | 4 Credit Approved by NHEQF. Comprehensive business awareness program focusing on skill...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'BASE (Business Awareness & Skill Enhancement)',
+                      description: '60 Hours | 4 Credit Approved by NHEQF. Comprehensive business awareness program focusing on skill',
+                      image: campusToCorporateImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -953,7 +1101,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master financial modeling techniques for business valuation and forecasting...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Financial Modelling',
+                      description: '30 Hours | 1 Credit NSDC. Master financial modeling techniques for business valuation and forecasting',
+                      image: advancedBusinessIntelligenceImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -982,7 +1137,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Become a certified research analyst with comprehensive market research training...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Research Analyst Certification',
+                      description: '30 Hours | 1 Credit NSDC. Become a certified research analyst with comprehensive market research training',
+                      image: creditLinkedImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1011,7 +1173,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn financial reporting standards and practices for accurate business reporting...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Certificate in Financial Reporting',
+                      description: '30 Hours | 1 Credit NSDC. Learn financial reporting standards and practices for accurate business reporting',
+                      image: aedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1040,7 +1209,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master performance management systems and organizational effectiveness strategies...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Certificate in Performance Management',
+                      description: '30 Hours | 1 Credit NSDC. Master performance management systems and organizational effectiveness strategies...',
+                      image: campusToCorporateImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1069,7 +1245,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive audit training covering internal controls and compliance procedures...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Certificate in Audit',
+                      description: '30 Hours | 1 Credit NSDC. Comprehensive audit training covering internal controls and compliance procedures',
+                      image: cyberSecurityImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1098,7 +1281,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn portfolio management strategies and investment optimization techniques...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Certificate in Portfolio Management',
+                      description: '30 Hours | 1 Credit NSDC. Learn portfolio management strategies and investment optimization techniques',
+                      image: guaranteedInternshipImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1127,7 +1317,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Understand the fundamentals of financial services industry and operations...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Fundamentals of Financial Services',
+                      description: '30 Hours | 1 Credit NSDC. Understand the fundamentals of financial services industry and operations',
+                      image: eedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1156,7 +1353,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Explore alternative investment strategies including hedge funds and private equity...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Alternative Investments',
+                      description: '30 Hours | 1 Credit NSDC. Explore alternative investment strategies including hedge funds and private equity',
+                      image: quantumComputingImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1185,7 +1389,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive understanding of financial markets structure and operations...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Certificate in Financial Markets',
+                      description: '30 Hours | 1 Credit NSDC. Comprehensive understanding of financial markets structure and operations',
+                      image: advancedBusinessIntelligenceImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1214,7 +1425,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master technical analysis tools and chart patterns for trading decisions...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Technical Analysis',
+                      description: '30 Hours | 1 Credit NSDC. Master technical analysis tools and chart patterns for trading decisions',
+                      image: creditLinkedImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1243,7 +1461,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Analyze stock market data using Excel and PowerBI for informed investment...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Stock Market Analytics using Excel and PowerBI',
+                      description: '30 Hours | 1 Credit NSDC. Analyze stock market data using Excel and PowerBI for informed investment',
+                      image: uiuxDeveloperImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1272,7 +1497,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Apply machine learning algorithms to financial data analysis and prediction...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Machine Learning for Finance',
+                      description: '30 Hours | 1 Credit NSDC. Apply machine learning algorithms to financial data analysis and prediction',
+                      image: cloudTechnologyImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1301,7 +1533,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn the fundamentals of digital marketing strategies and online promotion...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Digital Marketing Basics',
+                      description: '30 Hours | 1 Credit NSDC. Learn the fundamentals of digital marketing strategies and online promotion',
+                      image: campusToCorporateImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1330,7 +1569,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master search engine optimization and Google Ads for effective online marketing...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'SEO and Google Ads',
+                      description: '30 Hours | 1 Credit NSDC. Master search engine optimization and Google Ads for effective online marketing',
+                      image: aedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1359,7 +1605,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Learn social media marketing strategies across platforms for brand growth...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Social Media Marketing',
+                      description: '30 Hours | 1 Credit NSDC. Learn social media marketing strategies across platforms for brand growth',
+                      image: guaranteedInternshipImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1388,7 +1641,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Comprehensive English preparation for competitive examinations and assessments...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'English - Competitive Exams',
+                      description: '30 Hours | 1 Credit NSDC. Comprehensive English preparation for competitive examinations and assessments',
+                      image: eedpImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1417,7 +1677,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Master mathematical concepts and problem-solving for competitive exams...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Math - Competitive Exams',
+                      description: '30 Hours | 1 Credit NSDC. Master mathematical concepts and problem-solving for competitive exams',
+                      image: quantumComputingImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1446,7 +1713,14 @@ const Programs = () => {
                       30 Hours | 1 Credit NSDC. Develop logical reasoning and analytical thinking skills for competitive exams...
                     </p>
                   </div>
-                  <button className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start">
+                  <button 
+                    onClick={() => setSelectedProgram({
+                      title: 'Logic - Competitive Exams',
+                      description: '30 Hours | 1 Credit NSDC. Develop logical reasoning and analytical thinking skills for competitive exams',
+                      image: cyberSecurityImg
+                    })}
+                    className="text-orange-500 font-medium text-sm flex items-center gap-1 self-start hover:text-orange-600 transition-colors cursor-pointer"
+                  >
                     View Details →
                   </button>
                 </div>
@@ -1455,6 +1729,50 @@ const Programs = () => {
           </div>
       </section>
 
+
+      {/* Modal for programs without detail pages */}
+      {selectedProgram && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Modal Header with Image */}
+            <div className="relative">
+              <img
+                src={selectedProgram.image}
+                alt={selectedProgram.title}
+                className="w-full h-48 object-cover rounded-t-xl"
+              />
+              <button
+                onClick={() => setSelectedProgram(null)}
+                className="absolute top-4 right-4 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors"
+              >
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-[#3b2a1a] mb-4">
+                {selectedProgram.title}
+              </h2>
+              <p className="text-gray-600 text-base leading-relaxed whitespace-pre-line">
+                {selectedProgram.description}
+              </p>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-6 pt-0">
+              <button
+                onClick={() => setSelectedProgram(null)}
+                className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
 
       <Footer />
